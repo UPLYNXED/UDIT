@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('font/montserrat-bold-webfont.eot');
+    src: url('font/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/montserrat-bold-webfont.woff2') format('woff2'),
+         url('font/montserrat-bold-webfont.woff') format('woff'),
+         url('font/montserrat-bold-webfont.ttf') format('truetype'),
+         url('font/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserrathairline';
+    src: url('font/montserrat-hairline-webfont.eot');
+    src: url('font/montserrat-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/montserrat-hairline-webfont.woff2') format('woff2'),
+         url('font/montserrat-hairline-webfont.woff') format('woff'),
+         url('font/montserrat-hairline-webfont.ttf') format('truetype'),
+         url('font/montserrat-hairline-webfont.svg#montserrathairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('font/montserrat-light-webfont.eot');
+    src: url('font/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/montserrat-light-webfont.woff2') format('woff2'),
+         url('font/montserrat-light-webfont.woff') format('woff'),
+         url('font/montserrat-light-webfont.ttf') format('truetype'),
+         url('font/montserrat-light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('font/montserrat-regular-webfont.eot');
+    src: url('font/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/montserrat-regular-webfont.woff2') format('woff2'),
+         url('font/montserrat-regular-webfont.woff') format('woff'),
+         url('font/montserrat-regular-webfont.ttf') format('truetype'),
+         url('font/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'montserratregular';
+}
+
+.container {
+	max-width: 720px;
+	background-color: #e41a18;
+	margin: 0 auto;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 7.5%;
+}
+
+h2 {
+	font-family: 'montserratbold';
+	padding-top: 10%;
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h3 {
+	margin: 10vh 0;
+	color: white;
+	text-align: center;
+	font-size: 1.75em;
+}
+
+form input[type="text"], input[type="password"] {
+	font-family: 'montserratregular';
+	width: 75%;
+	margin: 4.5vh 12.5% 0 12.5%;
+	height: 55px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5%;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+form input[type="checkbox"] {
+	margin-left: 12.5%;
+	margin-top: 3.5vh;
+}
+
+label {
+	color: white;
+	font-size: 12px;
+	margin-left: 1%;
+}
+
+form input[type="submit"] {
+	font-family: 'montserratregular';
+	width: 75%;
+	margin: 2.5vh 12.5% 0% 12.5%;
+	height: 50px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	background-color: rgba(0,0,0, 0.2);
+	color: white;
+	font-size: 16px;
+	letter-spacing: 5px;
+}
+
+.noAccount {
+	text-align: center;
+	margin-top: 4.5vh;
+	z-index: 1;
+	line-height: 1.75em;
+}
+
+span {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+a {
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 12px;
+}
+
+.loginScreen {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/loginbottom.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50% 100%;
+}
+
+/* NEWS SCREEN */
+
+.newsScreen {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom,  rgba(14,14,14,0.25) 0%,rgba(255,255,255,0) 20vh), url(images/newsheader.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+section {
+	background-color: white;
+}
+
+article {
+	min-height: 11.5vh;
+	border-bottom: 1px solid lightgrey;
+	padding: 2vh;
+}
+
+.newsImage {
+	height: 11.5vh;
+	width: 11.5vh;
+	position: absolute;
+	background-color: black;
+}
+
+.newsScreen h1, .meetupsScreen h1, .profileScreen h1 {
+	font-size: 1em;
+}
+
+.newsTitle {
+	display: inline-block;
+	margin-left: 13.5vh;
+	vertical-align: top;
+	width: auto;
+}
+
+.newsTitle h4 {
+	font-size: 1em;
+}
+
+/* MEET UPS SCREEN */
+
+.meetupsScreen {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%), url(images/meetup.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.meetupsScreen h3 {
+	text-align: left;
+	padding-left: 15px;
+	margin: 0;
+	line-height: 36px;
+}
+
+.meetupsScreen h5 {
+	padding: 20px 0 20px 15px;
+	color: white;
+	opacity; 0.1;
+	font-family: 'montserratlight';
+	text-transform: uppercase;
+}
+
+.meetupsText {
+	position: fixed;
+    bottom: 0;
+    padding-bottom: 10vh;
+}
+
+a.accept {
+	text-transform: uppercase;
+    
+	padding-left: 15%;  
+    background: transparent url(images/tick.png) no-repeat top left;
+    
+	background-size: 5vh;
+    font-size: 2.4vh;
+    
+	text-align: left;
+    
+	height: 5vh;
+	display: inline-block;
+    
+	width: 25%;
+	margin: 0 0 0 15%;
+	line-height: 5vh;
+}    
+
+a.decline {
+	text-transform: uppercase;
+	padding-left: 15%;  
+    background: transparent url(images/cross.png) no-repeat top left;
+	background-size: 5vh;
+    font-size: 2.4vh;
+	text-align: left;
+	height: 5vh;
+	display: inline-block;
+	width: 25%;
+	margin: 0 0 0 5%;
+	line-height: 5vh;
+}    
+
+/* PROFILE */
+
+.profileScreen {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%), url(images/anna.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
