@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block;
 }
 
-body {
+html, body {
 	line-height: 1;
 	padding: 0;
 	margin: 0;
@@ -68,44 +68,6 @@ table {
 		z-index: 99;
 	}
 
-	.menuButton {
-		display: inline-block;
-		height: 100%;
-		width: 25%;
-		vertical-align: middle;
-		background-image: url(images/menuButton.png);
-		background-repeat: no-repeat;
-		background-position: 50%;
-		background-size: 1.55em;
-		opacity: 0.5;
-		cursor: pointer;
-		transition: opacity 0.25s ease-in-out;
-	}
-
-	.menuButton:hover {
-		opacity: 0.95;
-	}
-
-	.menuButton.hidden {
-		background: none;
-		cursor: default;
-	}
-
-	.menuSlider {
-		position: fixed;
-		left: -300px;
-		height: 100vh;
-		width: 75%;
-		max-width: 300px;
-		z-index: 100;
-	}
-
-	header {
-		height: 40vh;
-		background-size: cover;
-		background-position: 50% 70%;
-	}
-
 	.navTitle {
 		display: inline-block;
 		height: 100%;
@@ -120,133 +82,103 @@ table {
 		color: white;
 	}
 
-	h2 {
-		font-family: 'montserratbold';
-		padding-top: 14.5vh;
-		text-align: center;
-		font-size: 80px;
-		color: white;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-	}
-
-	form input[type="text"], input[type="password"] {
-		font-family: 'montserratregular';
-		width: 75%;
-		margin: 4.5vh 12.5% 0 12.5%;
-		height: 55px;
-		border-radius: 5px;
-		border: none;
-		padding-left: 5%;
-		font-size: 20px;
-		background-color: rgba(255, 255, 255, 0.9);
-	}
-
-	input {
-		outline: none;
-	}
-	
-	input[type="checkbox"]
-	{
-		display: none;
-	}
-	
-	input[type="checkbox"] + label div
-	{
-		position: relative;
+	.menuButton {
 		display: inline-block;
-		width: 30px;
-		height: 30px;
+		height: 100%;
+		width: 25%;
 		vertical-align: middle;
-		border-radius: 5px;
-		background: rgba(255, 255, 255, 0.9);
-		cursor:pointer;
-	}
-	
-	input[type="checkbox"] + label div:after
-	{
-		content: '';
-		position: absolute;
-		top: 15px; left: 15px;
-		width: 0px;
-		height: 0px;
-		vertical-align: middle;
-		border-radius: 4.5px;
-		background-color: #B51413;
-		cursor:pointer;
-		transition: 
-			width 0.05s ease-in-out, 
-			height 0.05s ease-in-out, 
-			top 0.05s ease-in-out, 
-			left 0.05s ease-in-out;
-	}
-	
-	input[type="checkbox"]:checked + label div:after
-	{
-		top: 7px; left: 7px;
-		width: 16px;
-		height: 16px;
-	}
-	
-	input[type="checkbox"] + label span
-	{
-		height: 28px;
-		margin-left: 2.5vh;
-		vertical-align: middle;
+		background-image: url(images/menuButton.png);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 1.55em;
+		opacity: 0.5;
+		cursor: pointer;
+		transition: opacity 0.25s ease-in-out, background-position 0.25s ease-in-out;
 	}
 
-	label {
-		display: block;
-		margin: 4.5vh 12.5% 0 12.5%;
-		color: white;
+	.menuButton:hover {
+		background-position: 60% 50%;
+		opacity: 0.95;
+	}
+
+	.menuButton.hidden {
+		background: none;
+		cursor: default;
+	}
+
+	.menuSlider {
+		position: fixed;
+		left: -300px;
+		height: 100vh;
+		width: 75%;
+		max-width: 300px;
+		background-color: white;
+		z-index: 100;
+	}
+
+	.menuViewport {
+		display: none;
+		position: fixed;
+		right: 0;
+		height: 100vh;
+		width: 100vw;
+		background-color: rgba(228, 26, 24, 0.5);
+		z-index: 99;
+		cursor: pointer;
+	}
+
+	.menuTitle {
+		font-family: 'montserratbold';
+		padding: 14vh 0 0;
+		text-align: center;
+		font-size: 4.5em;
+		color: #e41a18;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		font-size: 0.95em;
-		cursor: pointer;
 	}
 
-	form input[type="submit"] {
-		font-family: 'montserratregular';
-		width: 75%;
-		margin: 4.5vh 12.5% 0% 12.5%;
-		height: 50px;
-		border: none;
-		border-radius: 25px;
-		cursor: pointer;
-		background-color: rgba(0,0,0, 0.2);
-		color: white;
-		font-size: 1.2em;
-		letter-spacing: 2px;
-	}
-
-	.noAccount {
+	.menuLink {
+		display: block;
+		position: relative;
+		height: 10vh;
+		width: 80%;
+		margin: 5vh auto 0;
+		font-family: 'montserratlight';
 		text-align: center;
-		padding: 4.5vh 0;
-		line-height: 2em;;
-		font-size: 1em;
-		letter-spacing: 2px;
-	}
-
-	span {
-		color: white;
-		text-align: center;
-	}
-
-	.noAccount a {
-		text-align: center;
-		width: 100%;
-		padding: 0.25em 1em;
-		color: white;
-		font-size: 1em;
 		text-decoration: none;
-		background-color: rgba(0,0,0, 0.2);
-		border-radius: 1em;
+		font-size: 1.45em;
+		line-height: 10vh;
+		color: #1D1D1D;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		border-bottom: 1px solid  #8E8E8E;
+		transition: line-height 0.25s ease-in-out;
+	}
+
+	.menuLink:hover {
+		font-family: 'montserratregular';
+		line-height: 15vh;
+		transition: line-height 0.1s ease-in-out;
+	}
+
+	header {
+		height: 40vh;
+		background-size: cover;
+		background-position: 50% 70%;
+		z-index: 99;
 	}
 
 	@media (min-width: 480px) 
 	{
 		body {
 			font-size: 120%;
+		}
+	}
+
+	@media (max-height: 520px) 
+	{
+		body {
+			font-size: 95%;
 		}
 	}
 
@@ -263,6 +195,129 @@ table {
 			background-repeat: no-repeat;
 			background-size: 100%;
 			background-position: 50% 100%;
+		}
+
+		.loginTitle {
+			font-family: 'montserratbold';
+			padding-top: 14.5vh;
+			text-align: center;
+			font-size: 80px;
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		form input[type="text"], input[type="password"] {
+			font-family: 'montserratregular';
+			width: 70%;
+			margin: 4.5vh 12.5% 0 12.5%;
+			height: 55px;
+			border-radius: 5px;
+			border: none;
+			padding-left: 5%;
+			font-size: 20px;
+			background-color: rgba(255, 255, 255, 0.9);
+		}
+
+		input {
+			outline: none;
+		}
+
+		input[type="checkbox"]
+		{
+			display: none;
+		}
+
+		input[type="checkbox"] + label div
+		{
+			position: relative;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+			border-radius: 5px;
+			background: rgba(255, 255, 255, 0.9);
+			cursor:pointer;
+		}
+
+		input[type="checkbox"] + label div:after
+		{
+			content: '';
+			position: absolute;
+			top: 15px; left: 15px;
+			width: 0px;
+			height: 0px;
+			vertical-align: middle;
+			border-radius: 4.5px;
+			background-color: #B51413;
+			cursor:pointer;
+			transition: 
+				width 0.05s ease-in-out, 
+				height 0.05s ease-in-out, 
+				top 0.05s ease-in-out, 
+				left 0.05s ease-in-out;
+		}
+
+		input[type="checkbox"]:checked + label div:after
+		{
+			top: 7px; left: 7px;
+			width: 16px;
+			height: 16px;
+		}
+
+		input[type="checkbox"] + label span
+		{
+			height: 28px;
+			margin-left: 2.5vh;
+			vertical-align: middle;
+		}
+
+		label {
+			display: block;
+			margin: 4.5vh 12.5% 0 12.5%;
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 0.95em;
+			cursor: pointer;
+		}
+
+		form input[type="submit"] {
+			font-family: 'montserratregular';
+			width: 75%;
+			margin: 4.5vh 12.5% 0% 12.5%;
+			height: 50px;
+			border: none;
+			border-radius: 25px;
+			cursor: pointer;
+			background-color: rgba(0,0,0, 0.2);
+			color: white;
+			font-size: 1.2em;
+			letter-spacing: 2px;
+		}
+
+		.noAccount {
+			text-align: center;
+			padding: 4.5vh 0;
+			line-height: 2em;;
+			font-size: 1em;
+			letter-spacing: 2px;
+		}
+
+		span {
+			color: white;
+			text-align: center;
+		}
+
+		.noAccount a {
+			text-align: center;
+			width: 100%;
+			padding: 0.25em 1em;
+			color: white;
+			font-size: 1em;
+			text-decoration: none;
+			background-color: rgba(0,0,0, 0.2);
+			border-radius: 1em;
 		}
 
 		/* -- NEWS SCREEN -- */
@@ -299,9 +354,10 @@ table {
 			line-height: 7vh;
 			font-size: 0.95em;
 			font-family: 'montserratlight';
-		}
+		
+}
 
-		section {
+		.newsArticle {
 			background-color: white;
 		}
 
@@ -420,32 +476,34 @@ table {
 
 		.profileName {
 			position: absolute;
-			bottom: 14vh;
+			bottom: 20vh;
 			width: 100%;
 			text-align: center;
-			font-size: 2.75em;
-			line-height: 1.25em;
+			font-family: 'HeuristicaBold';
+			font-size: 3.75em;
+			line-height: 0.9em;
 			color: white;
 		}
 
 		.profileName .profileNameLast {
 			display: block;
-			font-family: 'montserratlight';
+			font-family: 'HeuristicaRegular';
+			font-family: serif;
 		}
 
 		.profileNationality {
 			position: absolute;
 			left: 0; right: 0;
-			bottom: 4vh;
-			height: 10vh;
-			max-height: 50px;
-			width: 70px;
+			bottom: 5vh;
+			height: 1em;
+			width: 100%;
 			margin: 0 auto;
+			padding-top: 8vh;
+			text-transform: uppercase;
 			background-image: url(images/flags/sweden.png);
 			background-repeat: no-repeat;
-			background-position: 50%;
-			background-size: 10vh;
-			border-radius: 5px;
+			background-position: 50% 0;
+			background-size: 40px;
 		}
 
 		.profileFollow, .profileDetails {

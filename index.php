@@ -9,9 +9,9 @@
 					$menuVisible = false;
 					include 'includes/nav.php';
 				?>
-				<h2>Udit</h2>
+				<h2 class="loginTitle">Udit</h2>
 				<form>
-					<input type="text" name="email" placeholder="email">
+					<input type="text" name="email" placeholder="email" autocomplete='off'>
 					<input type="password" name="password" placeholder="password">
 					<input type="checkbox" id="rememberMe">
 					<label for="rememberMe">
@@ -21,8 +21,9 @@
 					<input type="submit" name="btnAction" value="login">
 				</form>
 				<div class="noAccount">
-					<span>Don't have an account?<br>
-					<a href="register.php">SIGN UP</a>
+					<span>
+						Don't have an account yet?<br>
+						<a href="register.php">SIGN UP</a>
 					</span>
 				</div>
 			</div>

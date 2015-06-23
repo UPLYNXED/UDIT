@@ -1,7 +1,8 @@
 function initialize(screen) {
-
     //Initialize event handlers and the like here.
-    console.log(screen);
+    $(document).on('click', '.menuButton, .menuViewport', function(){ 
+        toggleMenu();
+    });
     
     switch(screen)
     {
@@ -20,6 +21,19 @@ function initialize(screen) {
     }
 }
 
+/* Menu slider handling */
+function toggleMenu() {
+    if($('.menuSlider').offset().left == -300) {
+        $('.menuSlider').animate({left: "0"});
+        $('.menuViewport').fadeIn();
+    } else
+    {
+        $('.menuSlider').animate({left: "-300px"});
+        $('.menuViewport').fadeOut();
+    }
+}
+
+/* Set greeting message based on time of day */
 function setGreeting() {
     var date = new Date();
     var hours = date.getHours();
@@ -33,29 +47,21 @@ function setGreeting() {
     return greeting;
 }
 
+/* Navigation bar background fading */
 function scrollNavBackground() {
     var bgTransparency = $(window).scrollTop()/210;
     $('nav').css({'background-color':'rgba(228,26,24, '+ bgTransparency +')'});
-    
     scrollNavShadow(bgTransparency);
 }
 
 function scrollNavShadow(bgTransparency) {
     var shadowTransparency = bgTransparency*22/100;
-    if(shadowTransparency <= 0.22)
-    {
+    if(shadowTransparency <= 0.22) {
         $('nav').css({'-webkit-box-shadow':'0px 5px 5px 0px rgba(0,0,0, '+ shadowTransparency +')', '-moz-box-shadow':'0px 5px 5px 0px rgba(0,0,0, '+ shadowTransparency +')', 'box-shadow':'0px 3px 5px 0px rgba(0,0,0, '+ shadowTransparency +')'});
-    }
-    else
-    {
+    } else {
         $('nav').css({'-webkit-box-shadow':'0px 5px 5px 0px rgba(0,0,0,0.22)', '-moz-box-shadow':'0px 5px 5px 0px rgba(0,0,0,0.22)', 'box-shadow':'0px 3px 5px 0px rgba(0,0,0,0.22)'});
     }
 }
-
-$(document).ready(function() 
-{
-    //initialize();
-});
 
 $(window).scroll(function()
 {

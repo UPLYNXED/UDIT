@@ -9,7 +9,7 @@
 					$menuVisible = false;
 					include 'includes/nav.php';
 				?>
-				<h2>Udit</h2>
+				<h2 class="loginTitle">Udit</h2>
 				<form>
 					<input type="text" name="name" placeholder="first name">
 					<input type="text" name="lastname" placeholder="last name">
@@ -18,8 +18,9 @@
 					<input type="submit" name="btnAction" value="register">
 				</form>
 				<div class="noAccount">
-					<span>Already have an account?<br>
-					<a href="index.php">SIGN IN</a>
+					<span>
+						Already have an account?<br>
+						<a href="index.php">SIGN IN</a>
 					</span>
 				</div>
 			</div>
