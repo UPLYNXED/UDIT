@@ -23,12 +23,12 @@ function initialize(screen) {
 
 /* Menu slider handling */
 function toggleMenu() {
-    if($('.menuSlider').offset().left == -300) {
-        $('.menuSlider').animate({left: "0"});
+    if($('.menuSlider').css('margin-left') == "-300px") {
+        $('.menuSlider').animate({marginLeft: "0px"});
         $('.menuViewport').fadeIn();
     } else
     {
-        $('.menuSlider').animate({left: "-300px"});
+        $('.menuSlider').animate({marginLeft: "-300px"});
         $('.menuViewport').fadeOut();
     }
 }
