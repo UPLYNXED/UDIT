@@ -9,8 +9,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	font-size: inherit;
+	font-weight: 400;
 	font-family: 'montserratregular';
 	vertical-align: baseline;
 }
@@ -23,6 +23,7 @@ body {
 	line-height: 1;
 	padding: 0;
 	margin: 0;
+	font-size: 100%;
 }
 
 ol, ul {
@@ -48,36 +49,84 @@ table {
 	/* --- DEFAULT CSS --- */
 
 	.container {
+		position: relative;
 		max-width: 720px;
+		min-height: 100vh;
 		background-color: #e41a18;
 		margin: 0 auto;
 		padding: 0;
 	}
 
-	h1 {
+	nav {
+		position: fixed;
+		left: 0; right: 0;
+		width: 100%;
+		max-width: 720px;
+		height: 12vh;
+		margin: 0 auto;
+		z-index: 99;
+	}
+
+	.menuButton {
+		display: inline-block;
+		height: 100%;
+		width: 25%;
+		vertical-align: middle;
+		background-image: url(images/menuButton.png);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: 1.55em;
+		opacity: 0.5;
+		cursor: pointer;
+		transition: opacity 0.25s ease-in-out;
+	}
+
+	.menuButton:hover {
+		opacity: 0.95;
+	}
+
+	.menuButton.hidden {
+		background: none;
+		cursor: default;
+	}
+
+	.menuSlider {
+		position: fixed;
+		left: -300px;
+		height: 100vh;
+		width: 75%;
+		max-width: 300px;
+		z-index: 100;
+	}
+
+	header {
+		height: 40vh;
+		background-size: cover;
+		background-position: 50% 70%;
+	}
+
+	.navTitle {
+		display: inline-block;
+		height: 100%;
+		width: 50%;
+		margin: 0 auto;
+		vertical-align: middle;
 		text-align: center;
-		font-size: 24px;
-		color: white;
 		text-transform: uppercase;
+		font-size: 1.25em;
+		line-height: 12vh;
 		letter-spacing: 2px;
-		padding-top: 7.5%;
+		color: white;
 	}
 
 	h2 {
 		font-family: 'montserratbold';
-		padding-top: 10%;
+		padding-top: 14.5vh;
 		text-align: center;
 		font-size: 80px;
 		color: white;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-	}
-
-	h3 {
-		margin: 10vh 0;
-		color: white;
-		text-align: center;
-		font-size: 1.75em;
 	}
 
 	form input[type="text"], input[type="password"] {
@@ -92,21 +141,74 @@ table {
 		background-color: rgba(255, 255, 255, 0.9);
 	}
 
-	form input[type="checkbox"] {
-		margin-left: 12.5%;
-		margin-top: 3.5vh;
+	/*input[type="checkbox"] {
+	
+		margin: 3.5vh 0 0 12.5%;
+	}*/
+	
+	input[type="checkbox"]
+	{
+		display: none;
+	}
+	
+	input[type="checkbox"] + label div
+	{
+		position: relative;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+		border-radius: 5px;
+		background: rgba(255, 255, 255, 0.9);
+		cursor:pointer;
+	}
+	
+	input[type="checkbox"] + label div:after
+	{
+		content: '';
+		position: absolute;
+		top: 15px; left: 15px;
+		width: 0px;
+		height: 0px;
+		vertical-align: middle;
+		border-radius: 4.5px;
+		background-color: #B51413;
+		cursor:pointer;
+		transition: 
+			width 0.05s ease-in-out, 
+			height 0.05s ease-in-out, 
+			top 0.05s ease-in-out, 
+			left 0.05s ease-in-out;
+	}
+	
+	input[type="checkbox"]:checked + label div:after
+	{
+		top: 7px; left: 7px;
+		width: 16px;
+		height: 16px;
+	}
+	
+	input[type="checkbox"] + label span
+	{
+		height: 28px;
+		margin-left: 2.5vh;
+		vertical-align: middle;
 	}
 
 	label {
+		display: block;
+		margin: 4.5vh 12.5% 0 12.5%;
 		color: white;
-		font-size: 12px;
-		margin-left: 1%;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 0.95em;
+		cursor: pointer;
 	}
 
 	form input[type="submit"] {
 		font-family: 'montserratregular';
 		width: 75%;
-		margin: 2.5vh 12.5% 0% 12.5%;
+		margin: 4.5vh 12.5% 0% 12.5%;
 		height: 50px;
 		border: none;
 		border-radius: 25px;
@@ -119,16 +221,14 @@ table {
 
 	.noAccount {
 		text-align: center;
-		margin-top: 4.5vh;
+		padding: 4.5vh 0;
 		z-index: 1;
 		line-height: 1.75em;
 	}
 
 	span {
 		color: white;
-		font-size: 12px;
 		text-align: center;
-		letter-spacing: 2px;
 	}
 
 	a {
@@ -138,6 +238,14 @@ table {
 		font-size: 12px;
 	}
 
+	@media (min-width: 480px) 
+	{
+		body {
+			font-size: 120%;
+		}
+	}
+
+
 	/* --- SCREEN OVERRIDES --- */
 
 		/* -- LOGIN SCREEN -- */
@@ -145,7 +253,7 @@ table {
 		.loginScreen {
 			position: relative;
 			width: 100%;
-			height: 100%;
+			min-height: 100vh;
 			background-image: url(images/loginbottom.png);
 			background-repeat: no-repeat;
 			background-size: 100%;
@@ -157,23 +265,35 @@ table {
 		.newsScreen {
 			width: 100%;
 			height: 100%;
-			background: linear-gradient(to bottom,  rgba(14,14,14,0.25) 0%,rgba(255,255,255,0) 20vh), url(images/newsheader.png);
 			background-repeat: no-repeat;
 			background-size: 100%;
 		}
 
-		.newsWelcome {
-			margin: 10vh 0;
-			color: white;
-			text-align: center;
-			font-size: 1.75em;
+		.newsScreen header {
+			background-image: 
+				linear-gradient(to bottom, rgba(14,14,14,0.5) 0%, rgba(255,255,255,0) 20vh), 
+				url(images/newsheader.png);
 		}
 
-		.newsWelcome span {
+		.newsWelcome {
+			position: absolute;
+			left: 0; right: 0;
+			top: 20vh;
+			vertical-align: middle;
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1.75em;
+			letter-spacing: 2px;
+		}
+
+		.newsWelcomeName {
 			display: block;
 			color: white;
 			text-align: center;
-			font-size: 1.5em;
+			line-height: 7vh;
+			font-size: 0.95em;
+			font-family: 'montserratlight';
 		}
 
 		section {
@@ -191,10 +311,6 @@ table {
 			width: 11.5vh;
 			position: absolute;
 			background-color: black;
-		}
-
-		.newsScreen h1, .meetupsScreen h1, .profileScreen h1 {
-			font-size: 1em;
 		}
 
 		.newsTitle {
@@ -241,18 +357,13 @@ table {
 
 		a.accept {
 			text-transform: uppercase;
-
 			padding-left: 15%;  
 			background: transparent url(images/tick.png) no-repeat top left;
-
 			background-size: 5vh;
 			font-size: 2.4vh;
-
 			text-align: left;
-
 			height: 5vh;
 			display: inline-block;
-
 			width: 25%;
 			margin: 0 0 0 15%;
 			line-height: 5vh;
@@ -277,7 +388,69 @@ table {
 		.profileScreen {
 			width: 100%;
 			height: 100%;
-			background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%), url(images/anna.png);
+		}
+
+		.profileScreen header {
+			position: relative;
+			height: 80vh;
+			background-image: 
+				linear-gradient(to bottom, rgba(14,14,14,0.5) 0%, rgba(255,255,255,0) 20vh),
+				linear-gradient(to top, rgba(21,24,33,0.7) 0, rgba(21,24,33,0.25) 40vh, rgba(21,24,33,0) 50vh),  
+				url(images/profiles/anna.png);
+		}
+
+		.profileInfo {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 40vh;
+			text-align: center;
+			color: white;
+		}
+
+		.profileName {
+			position: absolute;
+			bottom: 22vh;
+			width: 100%;
+			text-align: center;
+			font-size: 2.75em;
+			line-height: 1.25em;
+			color: white;
+		}
+
+		.profileName .profileNameLast {
+			display: block;
+		
+			font-family: 'montserratlight';
+}
+
+		.profileNationality {
+			position: absolute;
+			bottom: 8vh;
+			height: 10vh;
+			width: 100%;
+		
+			background-image: url(images/flags/sweden.png);
 			background-repeat: no-repeat;
-			background-size: 100%;
+			background-position: 50%;
+			background-size: 10vh;
+}
+
+		.profileFollow, .profileDetails {
+			height: 10vh;
+			width: 100%;
+		}
+
+		.profileFollow {
+			text-align: center;
+			text-transform: uppercase;
+			line-height: 10vh;
+			font-size: 1.25em;
+			letter-spacing: 2px;
+			color: white;
+			background-color: #e41a18;
+		}
+
+		.profileDetails {
+			background-color: white;
 		}

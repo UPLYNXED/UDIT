@@ -1,14 +1,25 @@
+<!DOCTYPE html>
 <html>
 	<?php include 'includes/head.php'; ?>
 	<body>
 		<div class="container">
 			<div class="profileScreen">
-				<h1>Profile</h1>
-
-				<div class="meetupsText">
-				<h5>August 27, 2015</h5>
-				<h3>Anna</h3>
-
+				<header>
+					<?php
+						$pageTitle = 'Profile';
+						include 'includes/nav.php';
+					?>
+					<div class="profileInfo">
+						<h3 class="profileName">Anna <span class="profileNameLast">Ahsltröm</span></h3>
+						<!--<h5>August 27, 2015</h5>-->
+						<div class="profileNationality flagSwedish"></div>
+					</div>
+				</header>
+				<div class="profileFollow">
+					Follow
+				</div>
+				<div class="profileDetails">
+					Details Stuff
 				</div>
 			</div>
 		</div>
