@@ -1,9 +1,5 @@
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+	<?php include 'includes/head.php'; ?>
 	<body>
 		<div class="container">
 			<div class="meetupsScreen">

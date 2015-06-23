@@ -1,8 +1,5 @@
 <html>
-	<head>
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+	<?php include 'includes/head.php'; ?>
 	<body>
 		<div class="container">
 			<h1>Login</h1>
