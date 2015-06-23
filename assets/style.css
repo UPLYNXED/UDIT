@@ -62,7 +62,8 @@ table {
 		left: 0; right: 0;
 		width: 100%;
 		max-width: 720px;
-		height: 12vh;
+		height: 8vh;
+		padding-top: 4vh;
 		margin: 0 auto;
 		z-index: 99;
 	}
@@ -114,7 +115,7 @@ table {
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 1.25em;
-		line-height: 12vh;
+		line-height: 8vh;
 		letter-spacing: 2px;
 		color: white;
 	}
@@ -141,10 +142,9 @@ table {
 		background-color: rgba(255, 255, 255, 0.9);
 	}
 
-	/*input[type="checkbox"] {
-	
-		margin: 3.5vh 0 0 12.5%;
-	}*/
+	input {
+		outline: none;
+	}
 	
 	input[type="checkbox"]
 	{
@@ -215,15 +215,16 @@ table {
 		cursor: pointer;
 		background-color: rgba(0,0,0, 0.2);
 		color: white;
-		font-size: 16px;
-		letter-spacing: 5px;
+		font-size: 1.2em;
+		letter-spacing: 2px;
 	}
 
 	.noAccount {
 		text-align: center;
 		padding: 4.5vh 0;
-		z-index: 1;
-		line-height: 1.75em;
+		line-height: 2em;;
+		font-size: 1em;
+		letter-spacing: 2px;
 	}
 
 	span {
@@ -231,11 +232,15 @@ table {
 		text-align: center;
 	}
 
-	a {
+	.noAccount a {
 		text-align: center;
 		width: 100%;
+		padding: 0.25em 1em;
 		color: white;
-		font-size: 12px;
+		font-size: 1em;
+		text-decoration: none;
+		background-color: rgba(0,0,0, 0.2);
+		border-radius: 1em;
 	}
 
 	@media (min-width: 480px) 
@@ -328,21 +333,22 @@ table {
 
 		.meetupsScreen {
 			width: 100%;
-			height: 100%;
-			background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%), url(images/meetup.png);
+			height: 100vh;
+			background: 
+				linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
+				url(images/meetup.png);
 			background-repeat: no-repeat;
 			background-size: 100%;
 		}
 
 		.meetupsScreen h3 {
 			text-align: left;
-			padding-left: 15px;
-			margin: 0;
+			font-size: 1.75em;
 			line-height: 36px;
 		}
 
 		.meetupsScreen h5 {
-			padding: 20px 0 20px 15px;
+			padding: 20px 0 20px 0;
 			color: white;
 			opacity; 0.1;
 			font-family: 'montserratlight';
@@ -350,36 +356,39 @@ table {
 		}
 
 		.meetupsText {
-			position: fixed;
+			position: absolute;
 			bottom: 0;
+			width: 85%;
 			padding-bottom: 10vh;
+			margin: 4.5vh 7.5% 0 7.5%;
+			color: white;
 		}
 
 		a.accept {
-			text-transform: uppercase;
-			padding-left: 15%;  
+			display: inline-block;
+			height: 5vh;
+			width: 30%;
+			margin: 0 0 0 0;
+			padding-left: 7vh;  
 			background: transparent url(images/tick.png) no-repeat top left;
 			background-size: 5vh;
 			font-size: 2.4vh;
 			text-align: left;
-			height: 5vh;
-			display: inline-block;
-			width: 25%;
-			margin: 0 0 0 15%;
+			text-transform: uppercase;
 			line-height: 5vh;
 		}    
 
 		a.decline {
-			text-transform: uppercase;
-			padding-left: 15%;  
+			display: inline-block;
+			height: 5vh;
+			width: 30%;
+			margin: 0 0 0 0;
+			padding-left: 7vh;  
 			background: transparent url(images/cross.png) no-repeat top left;
 			background-size: 5vh;
 			font-size: 2.4vh;
 			text-align: left;
-			height: 5vh;
-			display: inline-block;
-			width: 25%;
-			margin: 0 0 0 5%;
+			text-transform: uppercase;
 			line-height: 5vh;
 		}    
 
@@ -395,8 +404,9 @@ table {
 			height: 80vh;
 			background-image: 
 				linear-gradient(to bottom, rgba(14,14,14,0.5) 0%, rgba(255,255,255,0) 20vh),
-				linear-gradient(to top, rgba(21,24,33,0.7) 0, rgba(21,24,33,0.25) 40vh, rgba(21,24,33,0) 50vh),  
+				linear-gradient(to top, rgba(26, 26, 26, 0.7) 0, rgba(26, 26, 26, 0.25) 40vh, rgba(26, 26, 26, 0) 50vh), 
 				url(images/profiles/anna.png);
+			background-position: 50% 20%;
 		}
 
 		.profileInfo {
@@ -410,7 +420,7 @@ table {
 
 		.profileName {
 			position: absolute;
-			bottom: 22vh;
+			bottom: 14vh;
 			width: 100%;
 			text-align: center;
 			font-size: 2.75em;
@@ -420,21 +430,23 @@ table {
 
 		.profileName .profileNameLast {
 			display: block;
-		
 			font-family: 'montserratlight';
-}
+		}
 
 		.profileNationality {
 			position: absolute;
-			bottom: 8vh;
+			left: 0; right: 0;
+			bottom: 4vh;
 			height: 10vh;
-			width: 100%;
-		
+			max-height: 50px;
+			width: 70px;
+			margin: 0 auto;
 			background-image: url(images/flags/sweden.png);
 			background-repeat: no-repeat;
 			background-position: 50%;
 			background-size: 10vh;
-}
+			border-radius: 5px;
+		}
 
 		.profileFollow, .profileDetails {
 			height: 10vh;

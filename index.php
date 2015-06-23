@@ -18,7 +18,7 @@
 						<div class="checkbox"></div>
 						<span>Remember me</span>
 					</label>
-					<input type="submit" name="login" value="SIGN IN">
+					<input type="submit" name="btnAction" value="login">
 				</form>
 				<div class="noAccount">
 					<span>Don't have an account?<br>

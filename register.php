@@ -15,7 +15,7 @@
 					<input type="text" name="lastname" placeholder="last name">
 					<input type="text" name="email" placeholder="email">
 					<input type="password" name="password" placeholder="password">
-					<input type="submit" name="login" value="SIGN UP">
+					<input type="submit" name="btnAction" value="register">
 				</form>
 				<div class="noAccount">
 					<span>Already have an account?<br>
