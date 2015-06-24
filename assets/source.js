@@ -15,8 +15,8 @@ function initialize(screen) {
         case 'news':
             $('.greeting').html(setGreeting());
             break;
-        case 'profile':
-            //Initialize profile screen related js
+        case 'social':
+            $('.messageText strong').css({color: getColorName($('.messageText strong').html())})
             break;
     }
 }
@@ -45,6 +45,20 @@ function setGreeting() {
     if (hours >= 17) greeting = "Good evening";
 
     return greeting;
+}
+
+/* Random color based on name */
+function getColorName(str) {
+    var hash = 0;
+    for (var i = 0; i < str.length; i++) {
+        hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return "#" + intToARGB(hash);
+} 
+
+function intToARGB(i){
+    var clr = ((i>>24)&0xFF).toString(16) + ((i>>16)&0xFF).toString(16) + ((i>>8)&0xFF).toString(16) + (i&0xFF).toString(16);
+    return clr.substring(0, 6);
 }
 
 /* Navigation bar background fading */
