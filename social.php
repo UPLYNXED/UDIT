@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html>
-	<?php include 'includes/head.php'; ?>
+	<?php
+		$screenName = 'news';
+		include 'includes/head.php'; 
+	?>
 	<body>
 		<div class="container">
-			<div class="loginScreen">
-				<?php
-					$pageTitle = 'Register';
-					$menuVisible = false;
-					include 'includes/nav.php';
-				?>
-				<h2 class="loginTitle">Udit</h2>
-				<form>
-					<input type="text" name="name" placeholder="first name">
-					<input type="text" name="lastname" placeholder="last name">
-					<input type="text" name="email" placeholder="email">
-					<input type="password" name="password" placeholder="password">
-					<input type="submit" name="btnAction" value="register">
-				</form>
-				<div class="noAccount">
-					<span>
-						Already have an account?<br>
-						<a href="index.php">SIGN IN</a>
-					</span>
-				</div>
+			<div class="newsScreen">
+				<header>
+					<?php include 'includes/nav.php'; ?>
+					<div class="newsWelcome">
+						<span class="greeting">Good day</span> 
+						<span class="newsWelcomeName"><?php echo $_SESSION['name'] ?></span>
+					</div>
+				</header>
+				<section>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage"></div>
+						<div class="newsTitle">
+							<h4>
+								New meet-up point for expats opened at Strijp-S
+							</h4>
+						</div>
+					</article>
+				</section>
 			</div>
 		</div>
 	</body>
