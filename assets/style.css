@@ -384,9 +384,6 @@ table {
 
 		.newsArticle {
 			background-color: white;
-		}
-
-		article {
 			min-height: 11.5vh;
 			border-bottom: 1px solid lightgrey;
 			padding: 2vh;
@@ -603,20 +600,52 @@ table {
 			fill: #ffffff;
 		}
 
-		.messageBox {
+		.messageContainer {
 			background-color: white;
 			width: 100%;
-			height: 74vh;
+			min-height: 74vh;
 			padding-top: 5vh;
 		}
 
-		.messages {
+		.messageWrapper {
+			position: relative;
+			padding: 3vh 4%;
 			border: none;
+			font-size: 0.85em;
 		}
 
 		.messageUserImage {
-			height: 7vh;
-			width: 7vh;
+			display:inline-block;
+			width: calc(8% + 4vh);
+			padding-bottom: calc(8% + 4vh);
+			vertical-align: middle;
 			background-color: black;
 			border-radius: 50%;
+		}
+
+		.messageText {
+			position: relative;
+			display: inline-block;
+			min-width: 50%;
+			max-width: calc(74% - 4vh);
+			margin-left: 5%;
+			padding: 20px 16px;
+			vertical-align: middle;
+			line-height: 1.45em;
+			background-color: rgb(229, 229, 229);
+			border-radius: 5px;
+		}
+
+		.messageText:before
+		{
+			content: "";
+			position: absolute;
+			height: 0;
+			width: 0;
+			top: calc(50% - 15px);
+			left: -25px;
+			z-index: 1;
+			border-width: 15px 13px;
+			border-style: solid;
+			border-color: transparent rgb(229, 229, 229) transparent transparent;
 		}

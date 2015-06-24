@@ -19,21 +19,35 @@
 						<img src="assets/images/messages.png" alt="group" id="groupIcon">
 					</div>
 				</section>
-				<section class="messageBox">
-					<article class="messages">
-						<div class="messageUserImage">
+				<section class="messageContainer">
+					<article class="messageWrapper">
+						<div class="messageUserImage"></div>
+						<div class="messageText">
+							Hi there! I am new here!
 						</div>
 					</article>
-					<article class="messages">
-						<div class="messageUserImage">
+					<article class="messageWrapper">
+						<div class="messageUserImage"></div>
+						<div class="messageText">
+							Hi there! I am new here!
 						</div>
 					</article>
-					<article class="messages">
-						<div class="messageUserImage">
+					<article class="messageWrapper">
+						<div class="messageUserImage"></div>
+						<div class="messageText">
+							Hi there! I am new here!
 						</div>
 					</article>
-					<article class="messages">
-						<div class="messageUserImage">
+					<article class="messageWrapper">
+						<div class="messageUserImage"></div>
+						<div class="messageText">
+							Hi there! I am new here!
+						</div>
+					</article>
+					<article class="messageWrapper">
+						<div class="messageUserImage"></div>
+						<div class="messageText">
+							Hi there! I am new here!
 						</div>
 					</article>
 				</section>
