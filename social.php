@@ -1,92 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<?php
-		$screenName = 'news';
 		include 'includes/head.php'; 
 	?>
 	<body>
 		<div class="container">
-			<div class="newsScreen">
+			<div class="socialScreen">
 				<header>
-					<?php include 'includes/nav.php'; ?>
-					<div class="newsWelcome">
-						<span class="greeting">Good day</span> 
-						<span class="newsWelcomeName"><?php echo $_SESSION['name'] ?></span>
-					</div>
+					<?php 
+						$pageTitle = "My Group";
+						include 'includes/nav.php'; 
+					?>
 				</header>
 				<section>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
-					<article class="newsArticle">
-						<div class="newsImage"></div>
-						<div class="newsTitle">
-							<h4>
-								New meet-up point for expats opened at Strijp-S
-							</h4>
-						</div>
-					</article>
+					<div class="groupTimeline">
+					</div><div class="groupDM">
+					</div>
 				</section>
 			</div>
 		</div>
