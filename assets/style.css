@@ -128,7 +128,7 @@ table {
 		cursor: default;
 	}
 
-	.chatButton {
+	.chatNavButton {
 		display: inline-block;
 		height: 100%;
 		width: 25%;
@@ -144,12 +144,12 @@ table {
 			background-position 0.25s ease-in-out;
 	}
 
-	.chatButton:hover {
+	.chatNavButton:hover {
 		background-position: 40% 50%;
 		opacity: 0.95;
 	}
 
-	.chatButton.hidden {
+	.chatNavButton.hidden {
 		background: none;
 		cursor: default;
 	}
@@ -606,7 +606,7 @@ table {
 
 		/* -- SOCIAL SCREEN -- */
 
-		.socialScreen header {
+		.chatScreen header {
 			height: 11vh;
 		}
 
@@ -634,9 +634,8 @@ table {
 			width: 100%;
 			min-height: 74vh;
 			padding-top: 4vh;
-		
-			margin-bottom: 15vh;
-}
+			margin-bottom: 10vh;
+		}
 
 		.messageWrapper {
 			position: relative;
@@ -682,7 +681,7 @@ table {
 			border-color: transparent rgb(229, 229, 229) transparent transparent;
 		}
 
-		.socialScreen form {
+		.chatScreen form {
 			position: fixed;
 		
 			bottom: 0;
@@ -691,23 +690,24 @@ table {
 			width: 100%;
 			max-width: 720px;
 			height: 10vh;
+			min-height: 50px;
 			margin: 0 auto;
 			background-color: #e41a18;
 		}
 
-		.socialScreen input[type="text"] {
+		.chatScreen input[type="text"] {
 			margin: 10px;
 			width: 58%;
-			height: 7vh;
+			height: 65%;
 			display: inline-block;
 			font-size: 0.85em;
 		
 			font-family: "montserratlight";
 }
 
-		.socialScreen input[type="submit"] {
+		.chatScreen input[type="submit"] {
 			width: 25%;
-			height: 7vh;
+			height: 70%;
 			display: inline-block;
 			font-size: 0.85em;
 			position: absolute;

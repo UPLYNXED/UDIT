@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<?php
-		$screenName = "social";
+		$screenName = "chat";
 		include 'includes/head.php'; 
 	?>
 	<body>
 		<div class="container">
-			<div class="socialScreen">
+			<div class="chatScreen">
 				<header>
 					<?php 
 						$pageTitle = "My Group";

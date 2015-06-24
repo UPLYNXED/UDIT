@@ -4,6 +4,10 @@ function initialize(screen) {
         toggleMenu();
     });
     
+    $(document).on('click', '.chatNavButton', function(){ 
+        window.location.href = 'chat.php';
+    });
+    
     switch(screen)
     {
         case 'login':
@@ -15,7 +19,7 @@ function initialize(screen) {
         case 'news':
             $('.greeting').html(setGreeting());
             break;
-        case 'social':
+        case 'chat':
             $.each( $('.messageText strong'), function(i) {
                 $('.messageText strong').eq(i).css({color: getColorName($('.messageText strong').eq(i).html())})
             });
