@@ -17,6 +17,16 @@
 					</div><div class="groupDM">
 					</div>
 				</section>
+				<section class="messageBox">
+					<article class="messages">
+					</article>
+					<article class="messages">
+					</article>
+					<article class="messages">
+					</article>
+					<article class="messages">
+					</article>
+				</section>
 			</div>
 		</div>
 	</body>

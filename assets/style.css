@@ -577,3 +577,34 @@ table {
 			color: rgb(144, 144, 144);
 			font-size: 0.75em;
 		}
+
+		/* -- SOCIAL SCREEN -- */
+
+		.socialScreen header {
+			height: 16vh;
+		}
+
+		.groupTimeline, .groupDM {
+			width: calc(50% - 1px);
+			display: inline-block;
+			height: 10vh;
+			background-color: white;
+		}
+
+		.groupTimeline {
+			border-right: 1px solid lightgray;
+		}
+
+		.groupDM {
+			width: 50%
+		}
+
+		.messageBox {
+			background-color: lightgray;
+			width: 100%;
+			height: 74vh;
+		}
+
+		.messages {
+			
+		}
