@@ -581,22 +581,26 @@ table {
 		/* -- SOCIAL SCREEN -- */
 
 		.socialScreen header {
-			height: 16vh;
+			height: 14vh;
 		}
 
 		.groupTimeline, .groupDM {
-			width: calc(50% - 1px);
+			width: 50%;
 			display: inline-block;
-			height: 10vh;
-			background-color: white;
+			height: 10vh;	
+			vertical-align: middle;
+			text-align: center;
+			padding-top: 3.7vh;
+			box-sizing: border-box;
+			background-color: white
 		}
 
-		.groupTimeline {
-			border-right: 1px solid lightgray;
+		.groupTimeline img {
+			height: 2.5vh;
 		}
 
-		.groupDM {
-			width: 50%
+		.groupTimeline img path {
+			fill: #ffffff;
 		}
 
 		.messageBox {

@@ -14,6 +14,7 @@
 				</header>
 				<section>
 					<div class="groupTimeline">
+						<img src="assets/images/group.svg" alt="group" id="groupIcon">
 					</div><div class="groupDM">
 					</div>
 				</section>
