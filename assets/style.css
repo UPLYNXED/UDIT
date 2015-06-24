@@ -181,7 +181,7 @@ table {
 
 	.menuLink:hover {
 		font-family: 'montserratregular';
-		line-height: 15vh;
+		line-height: 13vh;
 		transition: line-height 0.1s ease-in-out;
 	}
 
@@ -225,7 +225,7 @@ table {
 
 		.loginTitle {
 			font-family: 'montserratbold';
-			padding-top: 14.5vh;
+			padding-top: 12.5vh;
 			text-align: center;
 			font-size: 80px;
 			color: white;
@@ -247,6 +247,7 @@ table {
 
 		input {
 			outline: none;
+			-webkit-appearance: none;
 		}
 
 		input[type="checkbox"]
@@ -309,7 +310,7 @@ table {
 		}
 
 		form input[type="submit"] {
-			font-family: 'montserratregular';
+			font-family: 'montserratlight';
 			width: 75%;
 			margin: 4.5vh 12.5% 0% 12.5%;
 			height: 50px;
@@ -319,13 +320,15 @@ table {
 			background-color: rgba(0,0,0, 0.2);
 			color: white;
 			font-size: 1.2em;
-			letter-spacing: 2px;
-		}
+			letter-spacing: 3px;
+		
+			text-transform: uppercase;
+}
 
 		.noAccount {
 			text-align: center;
 			padding: 4.5vh 0;
-			line-height: 2em;;
+			line-height: 2.5em;;
 			font-size: 1em;
 			letter-spacing: 2px;
 		}
@@ -545,4 +548,17 @@ table {
 
 		.profileDetails {
 			background-color: white;
+			text-align: center;
+		}
+
+		.profileDetailsBox {
+			display: inline-block;
+			height: 90%;
+			width: calc(33.3% - 1px);
+			border-right: 1px solid #D8D8D8;
+		}
+
+		.profileDetailsBox:last-of-type {
+			width: 33.3%;
+			border-right: none;
 		}

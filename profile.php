@@ -21,7 +21,13 @@
 					Follow
 				</div>
 				<div class="profileDetails">
-					Details Stuff
+					<div class="profileDetailsBox">
+						
+					</div><div class="profileDetailsBox">
+						
+					</div><div class="profileDetailsBox">
+						
+					</div>
 				</div>
 			</div>
 		</div>
