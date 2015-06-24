@@ -581,7 +581,7 @@ table {
 		/* -- SOCIAL SCREEN -- */
 
 		.socialScreen header {
-			height: 14vh;
+			height: 11vh;
 		}
 
 		.groupTimeline, .groupDM {
@@ -592,10 +592,10 @@ table {
 			text-align: center;
 			padding-top: 3.7vh;
 			box-sizing: border-box;
-			background-color: white
+			cursor: pointer;
 		}
 
-		.groupTimeline img {
+		.groupTimeline img, .groupDM img {
 			height: 2.5vh;
 		}
 
@@ -604,11 +604,19 @@ table {
 		}
 
 		.messageBox {
-			background-color: lightgray;
+			background-color: white;
 			width: 100%;
 			height: 74vh;
+			padding-top: 5vh;
 		}
 
 		.messages {
-			
+			border: none;
+		}
+
+		.messageUserImage {
+			height: 7vh;
+			width: 7vh;
+			background-color: black;
+			border-radius: 50%;
 		}
