@@ -16,7 +16,9 @@ function initialize(screen) {
             $('.greeting').html(setGreeting());
             break;
         case 'social':
-            $('.messageText strong').css({color: getColorName($('.messageText strong').html())})
+            $.each( $('.messageText strong'), function(i) {
+                $('.messageText strong').eq(i).css({color: getColorName($('.messageText strong').eq(i).html())})
+            });
             break;
     }
 }

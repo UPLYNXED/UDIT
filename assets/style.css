@@ -633,9 +633,9 @@ table {
 			background-color: white;
 			width: 100%;
 			min-height: 74vh;
-			padding-top: 5vh;
+			padding-top: 4vh;
 		
-			margin-bottom: 10vh;
+			margin-bottom: 15vh;
 }
 
 		.messageWrapper {
@@ -663,6 +663,7 @@ table {
 			padding: 20px 16px;
 			vertical-align: middle;
 			line-height: 1.45em;
+			font-family: "montserratlight";
 			background-color: rgb(229, 229, 229);
 			border-radius: 5px;
 		}
@@ -687,20 +688,25 @@ table {
 			bottom: 0;
 			left: 0;
 			right: 0;
+			width: 100%;
+			max-width: 720px;
 			height: 10vh;
+			margin: 0 auto;
 			background-color: #e41a18;
 		}
 
 		.socialScreen input[type="text"] {
 			margin: 10px;
-			width: 60%;
+			width: 58%;
 			height: 7vh;
 			display: inline-block;
 			font-size: 0.85em;
-		}
+		
+			font-family: "montserratlight";
+}
 
 		.socialScreen input[type="submit"] {
-			width: 120px;
+			width: 25%;
 			height: 7vh;
 			display: inline-block;
 			font-size: 0.85em;
