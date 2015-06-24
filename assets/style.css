@@ -107,13 +107,15 @@ table {
 		height: 100%;
 		width: 25%;
 		vertical-align: middle;
-		background-image: url(images/menuButton.png);
+		background-image: url(images/iconMenu.png);
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
-		background-size: 1.55em;
+		background-size: 3vh;
 		opacity: 0.5;
 		cursor: pointer;
-		transition: opacity 0.25s ease-in-out, background-position 0.25s ease-in-out;
+		transition: 
+			opacity 0.25s ease-in-out, 
+			background-position 0.25s ease-in-out;
 	}
 
 	.menuButton:hover {
@@ -122,6 +124,32 @@ table {
 	}
 
 	.menuButton.hidden {
+		background: none;
+		cursor: default;
+	}
+
+	.chatButton {
+		display: inline-block;
+		height: 100%;
+		width: 25%;
+		vertical-align: middle;
+		background-image: url(images/iconChat.png);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 3vh;
+		opacity: 0.5;
+		cursor: pointer;
+		transition: 
+			opacity 0.25s ease-in-out, 
+			background-position 0.25s ease-in-out;
+	}
+
+	.chatButton:hover {
+		background-position: 40% 50%;
+		opacity: 0.95;
+	}
+
+	.chatButton.hidden {
 		background: none;
 		cursor: default;
 	}

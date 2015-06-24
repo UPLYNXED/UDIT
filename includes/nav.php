@@ -15,7 +15,7 @@
 <nav>
     <div class="menuButton<?php echo $menuVisible; ?>"></div><h1 class="navTitle">
         <?php echo $pageTitle; ?>
-    </h1>
+    </h1><div class="chatButton<?php echo $menuVisible; ?>"></div>
 </nav>
 <div class="menuViewport"></div>
 <section class="menuSlider">
