@@ -22,11 +22,14 @@
 				</div>
 				<div class="profileDetails">
 					<div class="profileDetailsBox">
-						
+						<h4>Fashion</h4>
+						<span>Branch</span>
 					</div><div class="profileDetailsBox">
-						
+						<h4>117 (5 Y)</h4>
+						<span>Days in EHV</span>
 					</div><div class="profileDetailsBox">
-						
+						<h4>343</h4>
+						<span>Followers</span>
 					</div>
 				</div>
 			</div>

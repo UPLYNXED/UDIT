@@ -128,7 +128,6 @@ table {
 
 	.menuSlider {
 		position: fixed;
-		/* left: -300px; */
 		margin-left: -300px;
 		height: 100vh;
 		width: 75%;
@@ -321,9 +320,8 @@ table {
 			color: white;
 			font-size: 1.2em;
 			letter-spacing: 3px;
-		
 			text-transform: uppercase;
-}
+		}
 
 		.noAccount {
 			text-align: center;
@@ -382,8 +380,7 @@ table {
 			line-height: 7vh;
 			font-size: 0.95em;
 			font-family: 'montserratlight';
-		
-}
+		}
 
 		.newsArticle {
 			background-color: white;
@@ -486,7 +483,10 @@ table {
 		.profileScreen header {
 			position: relative;
 			height: 80vh;
-			background-image: linear-gradient(to bottom, rgba(14,14,14,0.7) 0%, rgba(255,255,255,0) 20vh),      linear-gradient(to top, rgba(26, 26, 26, 0.7) 0, rgba(26, 26, 26, 0.25) 40vh, rgba(26, 26, 26, 0) 50vh),       url(images/profiles/anna.png);
+			background-image: 
+				linear-gradient(to bottom, rgba(14,14,14,0.7) 0%, rgba(255,255,255,0) 20vh),
+				linear-gradient(to top, rgba(26, 26, 26, 0.7) 0, rgba(26, 26, 26, 0.25) 40vh, rgba(26, 26, 26, 0) 50vh),
+				url(images/profiles/anna.png);
 			background-position: 50% 20%;
 		}
 
@@ -561,4 +561,19 @@ table {
 		.profileDetailsBox:last-of-type {
 			width: 33.3%;
 			border-right: none;
+		}
+
+		.profileDetailsBox h4 {
+			padding-top: 2.8vh;
+			text-transform: uppercase;
+			color: #1D1D1D;
+			font-size: 1.2em;
+		}
+
+		.profileDetailsBox span {
+			display: block;
+			padding-top: 0.5vh;
+			text-transform: uppercase;
+			color: rgb(144, 144, 144);
+			font-size: 0.75em;
 		}
