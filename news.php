@@ -11,7 +11,7 @@
 					<?php include 'includes/nav.php'; ?>
 					<div class="newsWelcome">
 						<span class="greeting">Good day</span> 
-						<span class="newsWelcomeName"><?php echo $_SESSION['name'] ?></span>
+						<span class="newsWelcomeName"><?php echo $_SESSION['name'] . ' ' . $_SESSION['lastname'] ?></span>
 					</div>
 				</header>
 				<section>

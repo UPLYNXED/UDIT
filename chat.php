@@ -15,9 +15,9 @@
 				</header>
 				<section>
 					<div class="groupTimeline">
-						<img src="assets/images/group.png" alt="group" id="groupIcon">
-					</div><div class="groupDM">
-						<img src="assets/images/messages.png" alt="group" id="groupIcon">
+						Timeline
+					</div><div class="groupDM active">
+						Messenger
 					</div>
 				</section>
 				<section class="messageContainer">

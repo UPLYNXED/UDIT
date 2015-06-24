@@ -14,10 +14,10 @@
     }
     
     /* REPLACE THIS ONCE WE HAVE ACCOUNTS WORKING */
-    $_SESSION['name'] = "Jon Snow";
-    $_SESSION['field'] = "ICT";
-    $_SESSION['employer'] = "Philips";
-    $_SESSION['education'] = "Fontys Hogeschool ICT";
+    $_SESSION['name'] = "Anna";
+    $_SESSION['lastname'] = "Ahsltröm";
+    $_SESSION['field'] = "Fashion";
+    $_SESSION['employer'] = "V&D";
 ?>
 
 <head>

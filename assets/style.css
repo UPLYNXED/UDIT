@@ -79,10 +79,12 @@ table {
 
 	nav {
 		position: fixed;
+		top: 0;
 		left: 0; right: 0;
 		width: 100%;
 		max-width: 720px;
 		height: 8vh;
+		min-height: 60px;
 		padding-top: 4vh;
 		margin: 0 auto;
 		z-index: 99;
@@ -90,32 +92,39 @@ table {
 
 	.navTitle {
 		display: inline-block;
-		height: 100%;
+		/* height: auto; */
 		width: 50%;
 		margin: 0 auto;
 		vertical-align: middle;
 		text-align: center;
 		text-transform: uppercase;
-		font-size: 1.25em;
-		line-height: 8vh;
+		font-size: 1.35em;
+		line-height: 1.5em;
 		letter-spacing: 2px;
 		color: white;
 	}
 
-	.menuButton {
+	.menuButton, .chatNavButton {
 		display: inline-block;
 		height: 100%;
 		width: 25%;
 		vertical-align: middle;
-		background-image: url(images/iconMenu.png);
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
-		background-size: 3vh;
-		opacity: 0.5;
+		background-size: 1.25em;
+		opacity: 0.75;
 		cursor: pointer;
 		transition: 
 			opacity 0.25s ease-in-out, 
 			background-position 0.25s ease-in-out;
+	}
+
+	.menuButton {
+		background-image: url(images/iconMenu.png);
+	}
+
+	.chatNavButton {
+		background-image: url(images/iconChat.png);
 	}
 
 	.menuButton:hover {
@@ -123,39 +132,20 @@ table {
 		opacity: 0.95;
 	}
 
-	.menuButton.hidden {
-		background: none;
-		cursor: default;
-	}
-
-	.chatNavButton {
-		display: inline-block;
-		height: 100%;
-		width: 25%;
-		vertical-align: middle;
-		background-image: url(images/iconChat.png);
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		background-size: 3vh;
-		opacity: 0.5;
-		cursor: pointer;
-		transition: 
-			opacity 0.25s ease-in-out, 
-			background-position 0.25s ease-in-out;
-	}
-
 	.chatNavButton:hover {
 		background-position: 40% 50%;
 		opacity: 0.95;
 	}
 
-	.chatNavButton.hidden {
+	.menuButton.hidden, .chatNavButton.hidden {
 		background: none;
 		cursor: default;
 	}
 
 	.menuSlider {
 		position: fixed;
+		top: 0;
+		bottom: 0;
 		margin-left: -300px;
 		height: 100vh;
 		width: 75%;
@@ -607,18 +597,36 @@ table {
 		/* -- SOCIAL SCREEN -- */
 
 		.chatScreen header {
-			height: 11vh;
-		}
+			height: 8vh;
+			min-height: 60px;
+		
+			padding-top: 4vh;
+}
 
 		.groupTimeline, .groupDM {
-			width: 50%;
+			width: calc(50% - 1px);
 			display: inline-block;
-			height: 10vh;	
+			height: 30px;	
+			padding: 2vh 0;
 			vertical-align: middle;
 			text-align: center;
-			padding-top: 3.7vh;
-			box-sizing: border-box;
+			text-transform: uppercase;
+			font-size: 1em;
+			font-family: "montserratlight";
+			color: rgba(255, 255, 255, 0.6);
+			line-height: 30px;
+			border-right: 1px solid rgba(255, 255, 255, 0.5);
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
 			cursor: pointer;
+		}
+
+		.groupDM {
+			width: 50%;
+			border-right: none;
+		}
+
+		.groupTimeline.active, .groupDM.active {
+			color: rgba(255, 255, 255, 1);
 		}
 
 		.groupTimeline img, .groupDM img {
@@ -632,14 +640,15 @@ table {
 		.messageContainer {
 			background-color: white;
 			width: 100%;
-			min-height: 74vh;
-			padding-top: 4vh;
-			margin-bottom: 10vh;
+			min-height: calc(73vh - 31px);
+			padding-top: 2vh;
+			padding-bottom: 10vh;
+			/* margin-bottom: 40vh; */
 		}
 
 		.messageWrapper {
 			position: relative;
-			padding: 3vh 4%;
+			padding: 4vh 4% 0;
 			border: none;
 			font-size: 0.85em;
 		}
@@ -701,9 +710,8 @@ table {
 			height: 65%;
 			display: inline-block;
 			font-size: 0.85em;
-		
 			font-family: "montserratlight";
-}
+		}
 
 		.chatScreen input[type="submit"] {
 			width: 25%;
@@ -716,5 +724,4 @@ table {
 			top: 10px;
 			border: 2px solid white;
 			background: none;
-			/* border-radius: 5px; */
-}
+		}
