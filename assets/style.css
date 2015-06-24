@@ -269,7 +269,7 @@ table {
 			border: none;
 			padding-left: 5%;
 			font-size: 20px;
-			background-color: rgba(255, 255, 255, 0.9);
+			background-color: white;
 		}
 
 		input {
@@ -342,7 +342,7 @@ table {
 			margin: 4.5vh 12.5% 0% 12.5%;
 			height: 50px;
 			border: none;
-			border-radius: 25px;
+			border-radius: 55px;
 			cursor: pointer;
 			background-color: rgba(0,0,0, 0.2);
 			color: white;
@@ -371,9 +371,10 @@ table {
 			color: white;
 			font-size: 1em;
 			text-decoration: none;
-			background-color: rgba(0,0,0, 0.2);
 			border-radius: 1em;
-		}
+		
+			border: 2px solid white;   
+}
 
 		/* -- NEWS SCREEN -- */
 
@@ -621,7 +622,7 @@ table {
 		}
 
 		.groupTimeline img, .groupDM img {
-			height: 2.5vh;
+			height: 3.4vh;
 		}
 
 		.groupTimeline img path {
@@ -633,7 +634,9 @@ table {
 			width: 100%;
 			min-height: 74vh;
 			padding-top: 5vh;
-		}
+		
+			margin-bottom: 10vh;
+}
 
 		.messageWrapper {
 			position: relative;
@@ -672,8 +675,40 @@ table {
 			width: 0;
 			top: calc(50% - 15px);
 			left: -25px;
-			z-index: 1;
+			z-index: 0;
 			border-width: 15px 13px;
 			border-style: solid;
 			border-color: transparent rgb(229, 229, 229) transparent transparent;
 		}
+
+		.socialScreen form {
+			position: fixed;
+		
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 10vh;
+			background-color: #e41a18;
+		}
+
+		.socialScreen input[type="text"] {
+			margin: 10px;
+			width: 60%;
+			height: 7vh;
+			display: inline-block;
+			font-size: 0.85em;
+		}
+
+		.socialScreen input[type="submit"] {
+			width: 120px;
+			height: 7vh;
+			display: inline-block;
+			font-size: 0.85em;
+			position: absolute;
+			margin: 0;
+			right: 5%;
+			top: 10px;
+			border: 2px solid white;
+			background: none;
+			/* border-radius: 5px; */
+}

@@ -21,36 +21,30 @@
 				</section>
 				<section class="messageContainer">
 					<article class="messageWrapper">
-						<div class="messageUserImage"></div>
+						<div class="messageUserImage" style="background-image: url(assets/images/profiles/jeffrey.jpg); background-size: cover;"></div>
 						<div class="messageText">
-							Hi there! I am new here!
+							<strong style="color: navy;">Jeffrey (facilitator)</strong><br />
+							Hey! If anyone needs help, you can reach out to me here! :-) Hope you like Eindhoven
 						</div>
 					</article>
 					<article class="messageWrapper">
-						<div class="messageUserImage"></div>
+						<div class="messageUserImage" style="background-image: url(assets/images/profiles/josh.jpg); background-size: cover;"></div>
 						<div class="messageText">
-							Hi there! I am new here!
+							<strong style="color: orange;">Josh</strong><br />
+							Hi Anna, welcome to Eindhoven! :-)
 						</div>
 					</article>
 					<article class="messageWrapper">
-						<div class="messageUserImage"></div>
+						<div class="messageUserImage" style="background-image: url(assets/images/profiles/anna.png); background-size: cover;"></div>
 						<div class="messageText">
-							Hi there! I am new here!
-						</div>
-					</article>
-					<article class="messageWrapper">
-						<div class="messageUserImage"></div>
-						<div class="messageText">
-							Hi there! I am new here!
-						</div>
-					</article>
-					<article class="messageWrapper">
-						<div class="messageUserImage"></div>
-						<div class="messageText">
+							<strong style="color: red;">Anna</strong><br />
 							Hi there! I am new here!
 						</div>
 					</article>
 				</section>
+				<form>
+					<input type="text"><input type="submit" value="SEND">
+				</form>
 			</div>
 		</div>
 	</body>
