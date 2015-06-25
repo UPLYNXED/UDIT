@@ -17,7 +17,7 @@
 					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
 				url(assets/images/events/DTW.jpg);">
 						<div class="eventsText">
-							<h5><b class="branchBody branchIT">IT</b> August 27, 2015</h5>
+							<h5><b class="branchBody branchIT">IT</b> <b class="branchBody branchTechnology">Technology</b> August 27, 2015</h5>
 							<h3>Dutch Technology Week</h3>
 							<a class="accept">Accept</a><a class="decline">Decline</a>
 						</div>

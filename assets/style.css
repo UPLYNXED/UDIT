@@ -232,6 +232,18 @@ table {
 		background: #e67e22;
 	}
 
+	.branchTechnology {
+		background: #2980b9;
+	}
+
+	.branchFinance {
+		background: #2ecc71;
+	}
+
+	.branchRestaurant {
+		background: #c0392b;
+	}
+
 
 	@media (min-width: 480px) 
 	{
