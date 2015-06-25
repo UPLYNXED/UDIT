@@ -412,7 +412,9 @@ table {
 			height: 11.5vh;
 			width: 11.5vh;
 			position: absolute;
-			background-color: black;
+			background-image: url(images/news/placeholder.jpg); 
+			background-size: cover;
+			background-position: 50%;
 		}
 
 		.newsTitle {
@@ -725,3 +727,30 @@ table {
 			border: 2px solid white;
 			background: none;
 		}
+
+		/* -- LIVING SCREEN -- */
+
+		.livingScreen header {
+			height: 8vh;
+			min-height: 60px;
+		
+			padding-top: 4vh;
+		}	
+
+		.housingBtn, .jobsBtn, .educationBtn, .lifestyleBtn {
+			width: calc(25% - 1px);
+			display: inline-block;
+			height: 30px;	
+			padding: 2vh 0;
+			vertical-align: middle;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1em;
+			font-family: "montserratlight";
+			color: rgba(255, 255, 255, 0.6);
+			line-height: 30px;
+			border-right: 1px solid rgba(255, 255, 255, 0.5);
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
+			cursor: pointer;
+		}
+			
