@@ -754,8 +754,46 @@ table {
 			cursor: pointer;
 		}
 			
-		.livingScreen span {
+		.vacancyDate {
+			color: gray;
+			font-size: 0.85em;
+			font-family: 'montserratlight';
+		}
+
+		.livingScreen p {
 			color: lightgray;
 			font-size: 0.85em;
 			font-family: 'montserratlight';
+		}
+
+		.vacancyContainer {
+			background-color: white;
+			width: 100%;
+			min-height: calc(73vh - 31px);
+			padding-top: 2vh;
+			line-height: 1.2em;
+			/* margin-bottom: 40vh; */
+		}
+
+		.jobsArticle {
+			background-color: white;
+			min-height: 11.5vh;
+			border-bottom: 1px solid lightgrey;
+			padding: 2vh;
+		}
+
+		.jobsImage {
+			height: 11.5vh;
+			width: 11.5vh;
+			position: absolute;
+			background-image: url(images/news/placeholder.jpg); 
+			background-size: cover;
+			background-position: 50%;
+		}
+
+		.jobsTitle {
+			display: inline-block;
+			margin-left: 13.5vh;
+			vertical-align: top;
+			width: auto;
 		}

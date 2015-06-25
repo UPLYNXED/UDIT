@@ -24,50 +24,51 @@
 						Housing
 					</div>
 				</section>
-				<section class="messageContainer">
-					<article class="newsArticle">
-						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
-						<div class="newsTitle">
+				<section class="vacancyContainer">
+					<article class="jobsArticle">
+						<div class="jobsImage" style="background-image: url(assets/images/vacancy/programmer.jpg);"></div>
+						<div class="jobsTitle">
 							<h4>
 								Webprogrammer at ASML
 							</h4>
-							<span>Aug 2015 - Feb 2016</span>
+							<span class="">IT</span> <span class="">Aug 2015 - Feb 2016</span>
+							<p>Full-time</p>
 						</div>
 					</article>
-					<article class="newsArticle">
-						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
-						<div class="newsTitle">
+					<article class="jobsArticle">
+						<div class="jobsImage" style="background-image: url(assets/images/vacancy/accountant.jpg);"></div>
+						<div class="jobsTitle">
 							<h4>
 								Accountant at Rabobank
 							</h4>
-							<span>Aug 2015 - Feb 2016</span>
+							<span class="">Finance</span> <span class="">Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
-					<article class="newsArticle">
-						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
-						<div class="newsTitle">
+					<article class="jobsArticle">
+						<div class="jobsImage" style="background-image: url(assets/images/vacancy/engineer.jpg);"></div>
+						<div class="jobsTitle">
 							<h4>
 								Engineer at Philips
 							</h4>
-							<span>Aug 2015 - Feb 2016</span>
+							<span class="">Technology</span> <span class="">Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
-					<article class="newsArticle">
-						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
-						<div class="newsTitle">
+					<article class="jobsArticle">
+						<div class="jobsImage" style="background-image: url(assets/images/vacancy/waitress.jpg);"></div>
+						<div class="jobsTitle">
 							<h4>
 								Waiter at Vapiano
 							</h4>
-							<span>Aug 2015 - Feb 2016</span>
+							<span class="">Restaurant</span> <span class="">Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
-					<article class="newsArticle">
-						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
-						<div class="newsTitle">
+					<article class="jobsArticle">
+						<div class="jobsImage" style="background-image: url(assets/images/vacancy/leraar.jpg);"></div>
+						<div class="jobsTitle">
 							<h4>
 								Mechanical engineer at TU/e
 							</h4>
-							<span>Aug 2015 - Feb 2016</span>
+							<span class="">Education</span> <span class="">Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
 				</section>
