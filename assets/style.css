@@ -210,6 +210,23 @@ table {
 		z-index: 99;
 	}
 
+	/* 	--- BRANCH COLOURS --- */
+
+	.branchBody {
+		padding: 5px;
+		border-radius: 5px;
+		font-size: 0.9em;
+	}
+
+	.branchGeneral {
+		background: #00d2b0;
+	}
+
+	.branchIT {
+		background: #e67e22;
+	}
+
+
 	@media (min-width: 480px) 
 	{
 		body {
@@ -412,7 +429,9 @@ table {
 			height: 11.5vh;
 			width: 11.5vh;
 			position: absolute;
-			background-color: black;
+			background-image: url(images/news/placeholder.jpg); 
+			background-size: cover;
+			background-position: 50%;
 		}
 
 		.newsTitle {
@@ -599,9 +618,8 @@ table {
 		.chatScreen header {
 			height: 8vh;
 			min-height: 60px;
-		
 			padding-top: 4vh;
-}
+		}
 
 		.groupTimeline, .groupDM {
 			width: calc(50% - 1px);
@@ -724,4 +742,134 @@ table {
 			top: 10px;
 			border: 2px solid white;
 			background: none;
+		}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+		/* -- EVENTS SCREEN -- */
+		.eventsScreen header {
+			height: 8vh;
+			min-height: 60px;
+			padding-top: 4vh;
+		}
+
+		.eventsContainer {
+			background-color: white;
+			width: 100%;
+		}
+
+		.eventsEvent {
+			position: relative;
+			background: 
+				linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
+				url(images/events/HTC.jpg);
+			background-size: cover;
+			width: 100%;
+			height: 50vh;
+			color: white;
+		}
+
+		.eventsText {
+			position: absolute;
+			bottom: 10vh;
+			width: 85%;
+			color: white;
+		}
+
+		.eventsText {
+			position: absolute;
+			bottom: 5vh;
+			width: 90%;
+			color: white;
+			padding: 0 5%;
+		}
+
+		.eventsScreen h3 {
+			text-align: left;
+			font-size: 1.75em;
+			line-height: 36px;
+			padding-bottom: 2vh;
+		}
+
+		.eventsScreen h5 {
+			padding: 1vh 0 2vh 0;
+			color: white;
+			opacity; 0.1;
+			font-family: 'montserratlight';
+			text-transform: uppercase;
+		}
+
+		/* -- LIVING SCREEN -- */
+		
+=======
+		/* -- LIVING SCREEN -- */
+
+>>>>>>> origin/master
+		.livingScreen header {
+			height: 8vh;
+			min-height: 60px;
+		
+			padding-top: 4vh;
+		}	
+
+		.housingBtn, .jobsBtn, .educationBtn, .lifestyleBtn {
+			width: calc(25% - 1px);
+			display: inline-block;
+			height: 30px;	
+			padding: 2vh 0;
+			vertical-align: middle;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1em;
+			font-family: "montserratlight";
+			color: rgba(255, 255, 255, 0.6);
+			line-height: 30px;
+			border-right: 1px solid rgba(255, 255, 255, 0.5);
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
+			cursor: pointer;
+		}
+			
+		.vacancyDate {
+			color: gray;
+			font-size: 0.85em;
+			font-family: 'montserratlight';
+		}
+
+		.livingScreen p {
+			color: lightgray;
+			font-size: 0.85em;
+			font-family: 'montserratlight';
+		}
+
+		.vacancyContainer {
+			background-color: white;
+			width: 100%;
+			min-height: calc(73vh - 31px);
+			padding-top: 2vh;
+			line-height: 1.2em;
+			/* margin-bottom: 40vh; */
+		}
+
+		.jobsArticle {
+			background-color: white;
+			min-height: 11.5vh;
+			border-bottom: 1px solid lightgrey;
+			padding: 2vh;
+		}
+
+		.jobsImage {
+			height: 11.5vh;
+			width: 11.5vh;
+			position: absolute;
+			background-image: url(images/news/placeholder.jpg); 
+			background-size: cover;
+			background-position: 50%;
+		}
+
+		.jobsTitle {
+			display: inline-block;
+			margin-left: 13.5vh;
+			vertical-align: top;
+			width: auto;
 		}
