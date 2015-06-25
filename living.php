@@ -31,7 +31,7 @@
 							<h4>
 								Webprogrammer at ASML
 							</h4>
-							<span class="">IT</span> <span class="">Aug 2015 - Feb 2016</span>
+							<span class="branchBodySmall branchIT">IT</span> <span class="vacancyDate">Aug 2015 - Feb 2016</span>
 							<p>Full-time</p>
 						</div>
 					</article>
@@ -41,7 +41,7 @@
 							<h4>
 								Accountant at Rabobank
 							</h4>
-							<span class="">Finance</span> <span class="">Aug 2015 - Feb 2016</span>
+							<span class="branchBodySmall branchIT">Finance</span> <span class="vacancyDate">Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
 					<article class="jobsArticle">
@@ -50,7 +50,7 @@
 							<h4>
 								Engineer at Philips
 							</h4>
-							<span class="">Technology</span> <span class="">Aug 2015 - Feb 2016</span>
+							<span class="branchBodySmall branchIT">Technology</span> <span class="vacancyDate">Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
 					<article class="jobsArticle">
@@ -59,7 +59,7 @@
 							<h4>
 								Waiter at Vapiano
 							</h4>
-							<span class="">Restaurant</span> <span class="">Aug 2015 - Feb 2016</span>
+							<span class="branchBodySmall branchIT">Restaurant</span> <span class="vacancyDate">Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
 					<article class="jobsArticle">
@@ -68,7 +68,7 @@
 							<h4>
 								Mechanical engineer at TU/e
 							</h4>
-							<span class="">Education</span> <span class="">Aug 2015 - Feb 2016</span>
+							<span class="branchBodySmall branchIT">Education</span> <span class="vacancyDate">Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
 				</section>

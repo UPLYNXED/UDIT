@@ -218,6 +218,12 @@ table {
 		font-size: 0.9em;
 	}
 
+	.branchBodySmall {
+		padding: 2px 4px;
+		border-radius: 5px;
+		font-size: 0.85em;
+	}
+
 	.branchGeneral {
 		background: #00d2b0;
 	}
