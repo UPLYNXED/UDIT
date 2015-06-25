@@ -15,10 +15,10 @@
 				</header>
 				<section class="eventsContainer">
 					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
-				url(assets/images/events/DTW.jpg);">
+				url(assets/images/meetup.png);">
 						<div class="eventsText">
 							<h5><b class="branchBody branchIT">IT</b> <b class="branchBody branchTechnology">Technology</b> August 27, 2015</h5>
-							<h3>Dutch Technology Week</h3>
+							<a href="meetups.php"><h3>Philips starts a meeting for expats</h3></a>
 							<a class="accept">Accept</a><a class="decline">Decline</a>
 						</div>
 					</div>
@@ -27,8 +27,18 @@
 					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
 				url(assets/images/events/DDW.jpg);">
 						<div class="eventsText">
-							<h5><b class="branchBody branchGeneral">General</b> July 18, 2015</h5>
+							<h5><b class="branchBody branchGeneral">General</b> <b class="branchBody branchFashion">Fashion</b> August 29, 2015</h5>
 							<h3>Dutch Design Week</h3>
+							<a class="accept">Accept</a><a class="decline">Decline</a>
+						</div>
+					</div>
+				</section>
+				<section class="eventsContainer">
+					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
+				url(assets/images/events/DTW.jpg);">
+						<div class="eventsText">
+							<h5><b class="branchBody branchIT">IT</b> <b class="branchBody branchTechnology">Technology</b> September 1, 2015</h5>
+							<h3>Dutch Technology Week</h3>
 							<a class="accept">Accept</a><a class="decline">Decline</a>
 						</div>
 					</div>
@@ -36,7 +46,7 @@
 				<section class="eventsContainer">
 					<div class="eventsEvent">
 						<div class="eventsText">
-							<h5><b class="branchBody branchIT">IT</b> August 27, 2015</h5>
+							<h5><b class="branchBody branchTechnology">Technology</b> October 15, 2015</h5>
 							<h3>High Tech Campus yearly expo</h3>
 							<a class="accept">Accept</a><a class="decline">Decline</a>
 						</div>

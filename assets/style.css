@@ -244,6 +244,14 @@ table {
 		background: #c0392b;
 	}
 
+	.branchEducation {
+		background: #f1c40f;
+	}
+
+	.branchFashion {
+		background: #8e44ad;
+	}
+
 
 	@media (min-width: 480px) 
 	{
@@ -800,6 +808,11 @@ table {
 			color: white;
 			padding: 0 5%;
 		}
+
+			.eventsText a {
+				text-decoration: none;
+				color: white;
+			}
 
 		.eventsScreen h3 {
 			text-align: left;
