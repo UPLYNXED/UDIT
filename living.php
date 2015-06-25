@@ -25,39 +25,52 @@
 					</div>
 				</section>
 				<section class="messageContainer">
-					<article class="messageWrapper">
-						<div class="messageUserImage" style="background-image: url(assets/images/profiles/jeffrey.jpg); background-size: cover;"></div>
-						<div class="messageText">
-							<strong>Jeffrey (facilitator)</strong><br />
-							Hey! If anyone needs help, you can reach out to me here! :-) Hope you like Eindhoven
+					<article class="newsArticle">
+						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
+						<div class="newsTitle">
+							<h4>
+								Webprogrammer at ASML
+							</h4>
+							<span>Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
-					<article class="messageWrapper">
-						<div class="messageUserImage" style="background-image: url(assets/images/profiles/anna.png); background-size: cover;"></div>
-						<div class="messageText">
-							<strong>Anna</strong><br />
-							Hi there! I am new here!
+					<article class="newsArticle">
+						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
+						<div class="newsTitle">
+							<h4>
+								Accountant at Rabobank
+							</h4>
+							<span>Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
-					<article class="messageWrapper">
-						<div class="messageUserImage" style="background-image: url(assets/images/profiles/josh.jpg); background-size: cover;"></div>
-						<div class="messageText">
-							<strong>Josh</strong><br />
-							Hi Anna, welcome to Eindhoven! :-)
+					<article class="newsArticle">
+						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
+						<div class="newsTitle">
+							<h4>
+								Engineer at Philips
+							</h4>
+							<span>Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
-					<article class="messageWrapper">
-						<div class="messageUserImage" style="background-image: url(https://scontent.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/10702232_867950139884848_6160138085780686739_n.jpg?oh=7ad61394e46e95f4c014ac0e63a3717a&oe=5628385A); background-size: cover;"></div>
-						<div class="messageText">
-							<strong>Joris</strong><br />
-							Hoi ik ben Joris en ik ben niet een expat. Ik woon ook niet in Eindhoven dus ik weet niet wat ik hier eigenlijk te zoeken heb maar ok.
+					<article class="newsArticle">
+						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
+						<div class="newsTitle">
+							<h4>
+								Waiter at Vapiano
+							</h4>
+							<span>Aug 2015 - Feb 2016</span>
+						</div>
+					</article>
+					<article class="newsArticle">
+						<div class="newsImage" style="background-image: url(assets/images/news/asml.jpg);"></div>
+						<div class="newsTitle">
+							<h4>
+								Mechanical engineer at TU/e
+							</h4>
+							<span>Aug 2015 - Feb 2016</span>
 						</div>
 					</article>
 				</section>
-				<form>
-					<input type="text" placeholder="Send a message...">
-					<input type="submit" value="SEND">
-				</form>
 			</div>
 		</div>
 	</body>

@@ -754,3 +754,8 @@ table {
 			cursor: pointer;
 		}
 			
+		.livingScreen span {
+			color: lightgray;
+			font-size: 0.85em;
+			font-family: 'montserratlight';
+		}
