@@ -379,9 +379,8 @@ table {
 			font-size: 1em;
 			text-decoration: none;
 			border-radius: 1em;
-		
 			border: 2px solid white;   
-}
+		}
 
 		/* -- NEWS SCREEN -- */
 
@@ -394,7 +393,9 @@ table {
 		}
 
 		.newsScreen header {
-			background-image: linear-gradient(to bottom, rgba(14,14,14,0.7) 0%, rgba(255,255,255,0) 20vh),       url(images/newsheader.png);
+			background-image: 
+				linear-gradient(to bottom, rgba(14,14,14,0.7) 0%, rgba(255,255,255,0) 20vh),
+				url(images/newsheader.png);
 		}
 
 		.newsWelcome {
@@ -744,10 +745,6 @@ table {
 			background: none;
 		}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 		/* -- EVENTS SCREEN -- */
 		.eventsScreen header {
 			height: 8vh;
@@ -802,15 +799,7 @@ table {
 		}
 
 		/* -- LIVING SCREEN -- */
-		
-=======
-		/* -- LIVING SCREEN -- */
 
->>>>>>> origin/master
-=======
-		/* -- LIVING SCREEN -- */
-
->>>>>>> origin/master
 		.livingScreen header {
 			height: 8vh;
 			min-height: 60px;
