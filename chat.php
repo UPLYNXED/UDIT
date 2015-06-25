@@ -42,13 +42,6 @@
 							Hi Anna, welcome to Eindhoven! :-)
 						</div>
 					</article>
-					<article class="messageWrapper">
-						<div class="messageUserImage" style="background-image: url(https://scontent.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/10702232_867950139884848_6160138085780686739_n.jpg?oh=7ad61394e46e95f4c014ac0e63a3717a&oe=5628385A); background-size: cover;"></div>
-						<div class="messageText">
-							<strong>Joris</strong><br />
-							Hoi ik ben Joris en ik ben niet een expat. Ik woon ook niet in Eindhoven dus ik weet niet wat ik hier eigenlijk te zoeken heb maar ok.
-						</div>
-					</article>
 				</section>
 				<form>
 					<input type="text" placeholder="Send a message...">
