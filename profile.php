@@ -22,7 +22,7 @@
 				</div>
 				<div class="profileDetails">
 					<div class="profileDetailsBox">
-						<h4>Fashion</h4>
+						<h4 style="color: #9b59b6;">Fashion</h4>
 						<span>Branch</span>
 					</div><div class="profileDetailsBox">
 						<h4>117 (5 Y)</h4>

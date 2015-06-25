@@ -9,15 +9,15 @@
 			<div class="chatScreen">
 				<header>
 					<?php 
-						$pageTitle = "My Group";
+						$pageTitle = "Social";
 						include 'includes/nav.php'; 
 					?>
 				</header>
 				<section>
 					<div class="groupTimeline">
-						Timeline
+						<a href="events.php" style="color: white; text-decoration: none;">Meetups</a>
 					</div><div class="groupDM active">
-						Messenger
+						<a href="group.php" style="color: white; text-decoration: none;">My Groups</a>
 					</div>
 				</section>
 				<section class="messageContainer">

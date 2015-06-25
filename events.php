@@ -9,10 +9,17 @@
 			<div class="eventsScreen">
 				<header>
 					<?php 
-						$pageTitle = "Events";
+						$pageTitle = "Social";
 						include 'includes/nav.php'; 
 					?>
 				</header>
+				<section>
+					<div class="groupTimeline">
+						<a href="events.php" style="color: white; text-decoration: none;">Meetups</a>
+					</div><div class="groupDM active">
+						<a href="group.php" style="color: white; text-decoration: none;">My Groups</a>
+					</div>
+				</section>
 				<section class="eventsContainer">
 					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
 				url(assets/images/meetup.png);">

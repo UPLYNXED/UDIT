@@ -22,6 +22,6 @@
     <h2 class="menuTitle">UDIT</h2>
     <a class="menuLink" href="profile.php">My Profile</a>
     <a class="menuLink" href="news.php">News</a>
-    <a class="menuLink" href="social.php">Social</a>
+    <a class="menuLink" href="events.php">Social</a>
     <a class="menuLink" href="living.php">Living</a>
 </section>

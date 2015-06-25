@@ -898,3 +898,27 @@ table {
 			vertical-align: top;
 			width: auto;
 		}
+
+		/* 	-- MY GROUP	-- */
+
+		.groupsContainer {
+			background-color: white;
+			width: 100%;
+			min-height: calc(73vh - 31px);
+			padding-top: 2vh;
+			padding-bottom: 10vh;
+			/* margin-bottom: 40vh; */
+			line-height: 1.3em;
+		}
+
+		.groupsImage {
+			height: 11.5vh;
+			width: 11.5vh;
+			position: absolute;
+			background-image: url(images/news/placeholder.jpg); 
+			background-size: cover;
+			background-position: 50%;
+			border-radius: 50%;
+		}
+
+		
