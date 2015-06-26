@@ -210,6 +210,45 @@ table {
 		z-index: 99;
 	}
 
+	.tabButton {
+		display: inline-block;
+		height: 30px;	
+		padding: 2vh 0;
+		vertical-align: middle;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1em;
+		font-family: "montserratlight";
+		color: rgba(255, 255, 255, 0.6);
+		line-height: 30px;
+		border-right: 1px solid rgba(255, 255, 255, 0.5);
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		cursor: pointer;
+	}
+
+	.tabButton.active {
+		color: rgba(255, 255, 255, 1);
+	}
+
+	.tabQuarter {
+		width: calc(25% - 1px);
+	}
+
+	.tabQuarter:last-of-type {
+		width: 25%;
+		border-right: none;
+	}
+
+	.tabHalf {
+		width: calc(50% - 1px);
+	}
+
+	.tabHalf:last-of-type {
+		width: 50%;
+		border-right: none;
+	}
+
 	@media (min-width: 480px) 
 	{
 		body {
@@ -587,10 +626,6 @@ table {
 		.profileScreen header {
 			position: relative;
 			height: 80vh;
-			background-image: 
-				linear-gradient(to bottom, rgba(14,14,14,0.7) 0%, rgba(255,255,255,0) 20vh),
-				linear-gradient(to top, rgba(26, 26, 26, 0.7) 0, rgba(26, 26, 26, 0.25) 40vh, rgba(26, 26, 26, 0) 50vh),
-				url(images/profiles/anna.png);
 			background-position: 50% 20%;
 		}
 
@@ -629,10 +664,13 @@ table {
 			margin: 0 auto;
 			padding-top: 8vh;
 			text-transform: uppercase;
-			background-image: url(images/flags/Sweden.png);
 			background-repeat: no-repeat;
 			background-position: 50% 0;
 			background-size: calc(10px + 5vh);
+		}
+
+		.flagBritain {
+			background-image: url(images/flags/United-Kingdom.png);
 		}
 
 		.profileFollow, .profileDetails {
@@ -690,47 +728,12 @@ table {
 			padding-top: 4vh;
 		}
 
-		.groupTimeline, .groupDM {
-			width: calc(50% - 1px);
-			display: inline-block;
-			height: 30px;	
-			padding: 2vh 0;
-			vertical-align: middle;
-			text-align: center;
-			text-transform: uppercase;
-			font-size: 1em;
-			font-family: "montserratlight";
-			color: rgba(255, 255, 255, 0.6);
-			line-height: 30px;
-			border-right: 1px solid rgba(255, 255, 255, 0.5);
-			border-top: 1px solid rgba(255, 255, 255, 0.5);
-			cursor: pointer;
-		}
-
-		.groupDM {
-			width: 50%;
-			border-right: none;
-		}
-
-		.groupTimeline.active, .groupDM.active {
-			color: rgba(255, 255, 255, 1);
-		}
-
-		.groupTimeline img, .groupDM img {
-			height: 3.4vh;
-		}
-
-		.groupTimeline img path {
-			fill: #ffffff;
-		}
-
 		.messageContainer {
 			background-color: white;
 			width: 100%;
 			min-height: calc(73vh - 31px);
 			padding-top: 2vh;
 			padding-bottom: 10vh;
-			/* margin-bottom: 40vh; */
 		}
 
 		.messageWrapper {
@@ -746,6 +749,7 @@ table {
 			padding-bottom: calc(8% + 4vh);
 			vertical-align: middle;
 			background-color: black;
+			background-size: cover;
 			border-radius: 50%;
 		}
 
@@ -827,9 +831,7 @@ table {
 
 		.eventsEvent {
 			position: relative;
-			background: 
-				linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
-				url(images/events/HTC.jpg);
+			background-image: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),      url(images/events/HTC.jpg);
 			background-size: cover;
 			width: 100%;
 			height: 50vh;
@@ -878,23 +880,6 @@ table {
 			min-height: 60px;
 		
 			padding-top: 4vh;
-		}	
-
-		.housingBtn, .jobsBtn, .educationBtn, .lifestyleBtn {
-			width: calc(25% - 1px);
-			display: inline-block;
-			height: 30px;	
-			padding: 2vh 0;
-			vertical-align: middle;
-			text-align: center;
-			text-transform: uppercase;
-			font-size: 1em;
-			font-family: "montserratlight";
-			color: rgba(255, 255, 255, 0.6);
-			line-height: 30px;
-			border-right: 1px solid rgba(255, 255, 255, 0.5);
-			border-top: 1px solid rgba(255, 255, 255, 0.5);
-			cursor: pointer;
 		}
 			
 		.vacancyDate {

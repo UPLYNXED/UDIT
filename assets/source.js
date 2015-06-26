@@ -5,7 +5,7 @@ function initialize(screen) {
     });
     
     $(document).on('click', '.chatNavButton', function(){ 
-        window.location.href = 'chat.php';
+        window.location.href = 'group.php';
     });
     
     switch(screen)

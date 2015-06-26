@@ -14,15 +14,15 @@
 					?>
 				</header>
 				<section>
-					<div class="jobsBtn">
+					<a class="tabButton tabQuarter active jobsBtn" href="living.php">
 						Work
-					</div><div class="educationBtn">
+					</a><a class="tabButton tabQuarter educationBtn">
 						School
-					</div><div class="lifestyleBtn">
+					</a><a class="tabButton tabQuarter lifestyleBtn">
 						Events
-					</div><div class="housingBtn">
+					</a><a class="tabButton tabQuarter housingBtn">
 						Housing
-					</div>
+					</a>
 				</section>
 				<section class="vacancyContainer">
 					<article class="jobsArticle">

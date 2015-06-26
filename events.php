@@ -14,14 +14,14 @@
 					?>
 				</header>
 				<section>
-					<div class="groupTimeline">
-						<a href="events.php" style="color: white; text-decoration: none;">Meetups</a>
-					</div><div class="groupDM active">
-						<a href="group.php" style="color: white; text-decoration: none;">My Groups</a>
-					</div>
+					<a href="events.php" class="tabButton tabHalf active groupTimeline">
+						Meetups
+					</a><a href="group.php" class="tabButton tabHalf groupDM">
+						My Groups
+					</a>
 				</section>
 				<section class="eventsContainer">
-					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
+					<div class="eventsEvent" style="background-image: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
 				url(assets/images/meetup.png);">
 						<div class="eventsText">
 							<h5><b class="branchBody branchIT">IT</b> <b class="branchBody branchTechnology">Technology</b> August 27, 2015</h5>
@@ -31,7 +31,7 @@
 					</div>
 				</section>
 				<section class="eventsContainer">
-					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
+					<div class="eventsEvent" style="background-image: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
 				url(assets/images/events/DDW.jpg);">
 						<div class="eventsText">
 							<h5><b class="branchBody branchGeneral">General</b> <b class="branchBody branchFashion">Fashion</b> August 29, 2015</h5>
@@ -41,7 +41,7 @@
 					</div>
 				</section>
 				<section class="eventsContainer">
-					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
+					<div class="eventsEvent" style="background-image: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
 				url(assets/images/events/DTW.jpg);">
 						<div class="eventsText">
 							<h5><b class="branchBody branchIT">IT</b> <b class="branchBody branchTechnology">Technology</b> September 1, 2015</h5>
@@ -60,7 +60,7 @@
 					</div>
 				</section>
 				<section class="eventsContainer">
-					<div class="eventsEvent" style="background: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
+					<div class="eventsEvent" style="background-image: linear-gradient(to top,  rgba(14,14,14,1) 0%,rgba(255,255,255,0) 100%),
 				url(assets/images/events/Glow.jpg);">
 						<div class="eventsText">
 							<h5><b class="branchBody branchGeneral">General</b> December 1, 2015</h5>

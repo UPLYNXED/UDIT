@@ -14,11 +14,11 @@
 					?>
 				</header>
 				<section>
-					<div class="groupTimeline">
-						<a href="events.php" style="color: white; text-decoration: none;">Meetups</a>
-					</div><div class="groupDM active">
+					<a href="events.php" class="tabButton tabHalf groupTimeline">
+						Meetups
+					</a><a href="group.php" class="tabButton tabHalf active groupDM">
 						My Groups
-					</div>
+					</a>
 				</section>
 				<section class="groupsContainer">
 					<article class="jobsArticle">
