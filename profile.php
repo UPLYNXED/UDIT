@@ -12,7 +12,7 @@
 					<div class="profileInfo">
 						<h3 class="profileName">Anna <span class="profileNameLast">Ahlström</span></h3>
 						<!--<h5>August 27, 2015</h5>-->
-						<div class="profileNationality flagSwedish">
+						<div class="profileNationality flagSweden">
 							from Sweden
 						</div>
 					</div>

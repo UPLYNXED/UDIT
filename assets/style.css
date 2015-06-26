@@ -673,6 +673,10 @@ table {
 			background-image: url(images/flags/United-Kingdom.png);
 		}
 
+		.flagSweden {
+			background-image: url(images/flags/Sweden.png);
+		}
+
 		.profileFollow, .profileDetails {
 			height: 10vh;
 			width: 100%;
