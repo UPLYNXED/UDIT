@@ -10,7 +10,7 @@
 						include 'includes/nav.php';
 					?>
 					<div class="profileInfo">
-						<h3 class="profileName">Anna <span class="profileNameLast">Ahsltröm</span></h3>
+						<h3 class="profileName">Anna <span class="profileNameLast">Ahlström</span></h3>
 						<!--<h5>August 27, 2015</h5>-->
 						<div class="profileNationality flagSwedish">
 							from Sweden
@@ -18,7 +18,7 @@
 					</div>
 				</header>
 				<div class="profileFollow">
-					Follow
+					Settings
 				</div>
 				<div class="profileDetails">
 					<div class="profileDetailsBox">

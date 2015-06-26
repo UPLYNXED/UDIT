@@ -6,7 +6,7 @@
 			<div class="splashSocialScreen">
 			<section class="splashForm">
 				<?php
-					$pageTitle = 'New Social Group';
+					$pageTitle = 'New Group';
 					$menuVisible = true;
 					include 'includes/nav.php';
 				?>
@@ -42,21 +42,28 @@
 						<div class="checkbox"></div>
 						<span class="branchBody branchRestaurant">Restaurant</span>
 					</label>
-				<br /><br /><br />
-				<b>Sex</b>
-					<select>
-					  <option value="men">Men</option>
-					  <option value="women">Women</option>
-					  <option value="mixed">Mixed</option>
-					</select>
-				<b>Age</b>
-					<select>
-					  <option value="men">18-30</option>
-					  <option value="women">30-45</option>
-					  <option value="mixed">45+</option>
-					  <option value="mixed">Mixed</option>
-					</select>
-					<input type="submit" name="btnAction" value="Generate Group">
+					<div class="selectLists">
+						<div class="selectList">
+							<label for="selectSex">
+								Sex
+							</label><select id="selectSex" name="sex">
+								  <option value="men">Men</option>
+								  <option value="women">Women</option>
+								  <option value="mixed">Mixed</option>
+								  <option value="mixed">Yes pls</option>
+							</select>
+						</div><div class="selectList">
+							<label for="selectAge">
+								Age
+							</label><select id="selectAge" name="age">
+								  <option value="men">18-30</option>
+								  <option value="women">30-45</option>
+								  <option value="mixed">45+</option>
+								  <option value="mixed">Mixed</option>
+							</select>
+						</div>
+					</div>
+					<input type="submit" name="btnAction" value="Find Group">
 				</form>
 				</section>
 			</div>

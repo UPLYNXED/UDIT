@@ -15,7 +15,7 @@
     
     /* REPLACE THIS ONCE WE HAVE ACCOUNTS WORKING */
     $_SESSION['name'] = "Anna";
-    $_SESSION['lastname'] = "Ahsltröm";
+    $_SESSION['lastname'] = "Ahlström";
     $_SESSION['field'] = "Fashion";
     $_SESSION['employer'] = "V&D";
 ?>

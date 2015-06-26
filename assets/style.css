@@ -210,6 +210,22 @@ table {
 		z-index: 99;
 	}
 
+	@media (min-width: 480px) 
+	{
+		body {
+			position: relative;
+			font-size: 120%;
+		}
+	}
+
+	@media (max-height: 520px) 
+	{
+		body {
+			font-size: 95%;
+		}
+	}
+
+
 	/* 	--- BRANCH COLOURS --- */
 
 	.branchBody {
@@ -252,23 +268,6 @@ table {
 		background: #8e44ad;
 	}
 
-
-	@media (min-width: 480px) 
-	{
-		body {
-			position: relative;
-			font-size: 120%;
-		}
-	}
-
-	@media (max-height: 520px) 
-	{
-		body {
-			font-size: 95%;
-		}
-	}
-
-
 	/* --- SCREEN OVERRIDES --- */
 
 		/* -- LOGIN SCREEN -- */
@@ -292,6 +291,46 @@ table {
 			text-transform: uppercase;
 			letter-spacing: 2px;
 		}
+		
+		.errorMsg {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			max-width: 720px;
+			height: 12vh;
+			padding: 5% 0;
+			z-index: 110;
+			color: rgb(255, 255, 255);
+			background-color: rgba(36, 36, 36, 0.9);
+			border-top: 5px solid white;
+			text-transform: uppercase;
+			font-family: "montserratlight";
+			line-height: 6vh;
+			text-align: center;
+			opacity: 1;
+			-webkit-animation: fadeOut ease-in 1;
+			-moz-animation: fadeOut ease-in 1;
+			animation: fadeOut ease-in 1;
+			-webkit-animation-fill-mode: forwards;
+			-moz-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			-webkit-animation-duration: 10s;
+			-moz-animation-duration: 10s;
+			animation-duration: 10s;
+		}
+		
+		.errorMsg b {
+			font-family: "montserratregular";
+			font-size: 1.25em;
+		}
+
+		@keyframes fadeOut
+		{
+			0% { opacity 0; }
+			5% { opacity: 1; }
+			75% { opacity: 1; }
+			100% { opacity: 0.0; visibility: hidden }
+		}
 
 		form input[type="text"], input[type="password"] {
 			font-family: 'montserratregular';
@@ -305,9 +344,11 @@ table {
 			background-color: white;
 		}
 
-		input {
-			outline: none;
-			-webkit-appearance: none;
+		input, select {
+			outline:none;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance:none;
 		}
 
 		input[type="checkbox"]
@@ -369,7 +410,7 @@ table {
 			cursor: pointer;
 		}
 
-		form input[type="submit"] {
+		input[type="submit"] {
 			font-family: 'montserratlight';
 			width: 75%;
 			margin: 4.5vh 12.5% 0% 12.5%;
@@ -934,6 +975,8 @@ table {
 		}
 
 		.splashForm b {
+			display: block;
+			width: 75%;
 			margin: 4.5vh 12.5% 0 12.5%;
 			color: white;
 			text-transform: uppercase;
@@ -941,22 +984,49 @@ table {
 			font-size: 0.95em;
 		}
 
-		.splashForm select {
-			font-size: 0.8em;
-			font-weight: 400;
-			font-family: 'montserratregular';
-			padding:8px;
+		.splashForm .selectLists {
+			width: 75%;
+			margin: 4.5vh 12.5% 0 12.5%;
+		}
+
+		.splashForm .selectList {
+			display: inline-block;
+			width: 46%;
+			padding-right: 4%;
+		}
+
+		.splashForm .selectList:last-of-type {
+			display: inline-block;
+			width: 46%;
+			padding: 0 0 0 4%;
+		}
+
+		.splashForm .selectLists label {
+			display: inline-block;
+			width: 30%;
+			min-width: 35px;
+			margin: 2.5vh 0%;
+			vertical-align: middle;
+			color: white;
+			/* text-transform: uppercase; */
+			letter-spacing: 2px;
+			font-size: 0.95em;
+		}
+
+		.splashForm .selectLists select {
+			display: inline-block;
+			min-width: 70%;
+			padding: 8px 2.5%;
 			margin: 0;
+			vertical-align: middle;
+			border:none;
 			-webkit-border-radius:4px;
 			-moz-border-radius:4px;
 			border-radius:4px;
 			background: #f8f8f8;
+			font-size: 0.8em;
+			font-weight: 400;
+			font-family: 'montserratregular';
 			color:#888;
-			border:none;
-			outline:none;
-			display: inline-block;
-			-webkit-appearance:none;
-			-moz-appearance:none;
-			appearance:none;
 			cursor:pointer;
 		}
