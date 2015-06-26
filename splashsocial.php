@@ -50,7 +50,6 @@
 								  <option value="men">Men</option>
 								  <option value="women">Women</option>
 								  <option value="mixed">Mixed</option>
-								  <option value="mixed">Yes pls</option>
 							</select>
 						</div><div class="selectList">
 							<label for="selectAge">
