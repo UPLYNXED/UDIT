@@ -491,6 +491,7 @@ table {
 			min-height: 11.5vh;
 			border-bottom: 1px solid lightgrey;
 			padding: 2vh;
+			line-height: 1.3em;
 		}
 
 		.newsImage {

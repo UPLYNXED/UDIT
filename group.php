@@ -25,7 +25,7 @@
 						<div class="groupsImage" style="background-image: url(assets/images/vacancy/programmer.jpg);"></div>
 						<div class="jobsTitle">
 							<h4>
-								Programmers 4 Life
+								<a href="chat.php" style="color: black; text-decoration: none;">Programmers 4 Life</a>
 							</h4>
 							<span class="branchBodySmall branchIT">IT</span> <span class="vacancyDate">Jeffrey (facilitator)</span>
 							<p>Anna, Josh, Joris, May, Levi</p>

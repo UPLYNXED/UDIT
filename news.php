@@ -21,6 +21,7 @@
 							<h4>
 								New meet-up point for expats opened at Strijp-S
 							</h4>
+							<span class="branchBodySmall branchRestaurant">Restaurant</span>
 						</div>
 					</article>
 					<article class="newsArticle">
@@ -29,6 +30,7 @@
 							<h4>
 								Dutch Design Week
 							</h4>
+							<span class="branchBodySmall branchGeneral">General</span>
 						</div>
 					</article>
 					<article class="newsArticle">
@@ -37,6 +39,7 @@
 							<h4>
 								High Tech Campus, Philips Event
 							</h4>
+							<span class="branchBodySmall branchTechnology">Technology</span> <span class="branchBodySmall branchEducation">Education</span>
 						</div>
 					</article>
 					<article class="newsArticle">
@@ -45,6 +48,7 @@
 							<h4>
 								STRP Biënnale
 							</h4>
+							<span class="branchBodySmall branchTechnology">Technology</span>
 						</div>
 					</article>
 					<article class="newsArticle">
@@ -53,6 +57,7 @@
 							<h4>
 								What to do during Kingsday?
 							</h4>
+							<span class="branchBodySmall branchGeneral">General</span> <span class="branchBodySmall branchIT">Lifestyle</span>
 						</div>
 					</article>
 					<article class="newsArticle">
@@ -61,6 +66,7 @@
 							<h4>
 								GLOW goes global
 							</h4>
+							<span class="branchBodySmall branchGeneral">General</span> <span class="branchBodySmall branchIT">Lifestyle</span>
 						</div>
 					</article>
 					<article class="newsArticle">
@@ -69,6 +75,7 @@
 							<h4>
 								Cycling marathon for good cause
 							</h4>
+							<span class="branchBodySmall branchGeneral">General</span>
 						</div>
 					</article>
 					<article class="newsArticle">
@@ -77,6 +84,7 @@
 							<h4>
 								New cafetaria opening in Klokgebouw
 							</h4>
+							<span class="branchBodySmall branchRestaurant">Restaurant</span>
 						</div>
 					</article>
 					<article class="newsArticle">
@@ -85,6 +93,7 @@
 							<h4>
 								Internships available at ASML
 							</h4>
+							<span class="branchBodySmall branchEducation">Education</span>
 						</div>
 					</article>
 				</section>
