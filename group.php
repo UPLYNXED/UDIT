@@ -25,7 +25,7 @@
 						<div class="groupsImage" style="background-image: url(assets/images/vacancy/programmer.jpg);"></div>
 						<div class="jobsTitle">
 							<h4>
-								<a href="chat.php" style="color: black; text-decoration: none;">Programmers 4 Life</a>
+								<a href="chat.php" style="color: black; text-decoration: none;">Welcome To Eindhoven</a>
 							</h4>
 							<span class="branchBodySmall branchIT">IT</span> <span class="vacancyDate">Jeffrey (facilitator)</span>
 							<p>Anna, Josh, Joris, May, Levi</p>
@@ -35,14 +35,14 @@
 						<div class="groupsImage" style="background-image: url(assets/images/vacancy/programmer.jpg);"></div>
 						<div class="jobsTitle">
 							<h4>
-								1337
+								Philips Design
 							</h4>
 							<span class="branchBodySmall branchTechnology">Technology</span> <span class="vacancyDate">Caspar (facilitator)</span>
 							<p>Anna, Cedric, Reyansh, Atharv, Vladimir</p>
 						</div>
 					</article>
 					<article class="jobsArticle">
-						<div class="groupsImage" style="background-image: url(assets/images/vacancy/programmer.jpg);"></div>
+						<div class="groupsImage" style="background-image: url(assets/images/events/HTC.jpg);"></div>
 						<div class="jobsTitle">
 							<h4>
 								Explorers of Eindhoven

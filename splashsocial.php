@@ -49,7 +49,7 @@
 							</label><select id="selectSex" name="sex">
 								  <option value="men">Men</option>
 								  <option value="women">Women</option>
-								  <option value="mixed">Mixed</option>
+								  <option value="mixed" selected>Mixed</option>
 							</select>
 						</div><div class="selectList">
 							<label for="selectAge">
@@ -62,7 +62,7 @@
 							</select>
 						</div>
 					</div>
-					<input type="submit" name="btnAction" value="Find Group">
+					<a class="splashButton" href="group.php">Find Group</a>
 				</form>
 				</section>
 			</div>

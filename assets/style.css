@@ -958,6 +958,10 @@ table {
 			position: relative;
 			width: 100%;
 			min-height: 100vh;
+			background-image: url(images/loginbottom.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: 50% 100%;
 		}
 
 		.splashForm {
@@ -1019,4 +1023,23 @@ table {
 			font-family: 'montserratregular';
 			color:#888;
 			cursor:pointer;
+		}
+
+		.splashButton  {
+			display: block;
+			font-family: 'montserratlight';
+			width: 75%;
+			margin: 4.5vh 12.5% 0% 12.5%;
+			height: 50px;
+			border: none;
+			border-radius: 55px;
+			cursor: pointer;
+			background-color: rgba(0,0,0, 0.2);
+			color: white;
+			font-size: 1.2em;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align: center;
+			line-height: 50px
 		}

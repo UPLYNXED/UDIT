@@ -5,7 +5,7 @@ function initialize(screen) {
     });
     
     $(document).on('click', '.chatNavButton', function(){ 
-        window.location.href = 'group.php';
+        window.location.href = 'splashsocial.php';
     });
     
     switch(screen)
